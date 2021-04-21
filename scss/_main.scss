@@ -22,6 +22,24 @@ body {
 
 .indexNav {
     ul{
+        .dropdown-menu {
+            background-color: $texto-secundario;
+             
+         
+         
+            .dropdown-item {
+                color: $secundario;
+                font-size: 1em;
+                &:hover {
+                    background-color: $primario;
+                }
+               
+           
+            }
+            .dropdown-item-special {
+                color: $texto;
+            }
+        }
         a{
             text-decoration: none;   
             color: $texto-secundario;
