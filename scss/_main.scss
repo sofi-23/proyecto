@@ -1,0 +1,269 @@
+/*GENERAL***/
+
+body {
+    background-color: #f9f9f9;
+    font-size: 12px;
+    color: $texto;
+}
+
+/*INDEX****/
+
+
+@media (min-width: 768px) {
+    .fondoIndex {
+        background-image: url(../images/fondo2.jpg);
+        background-position: center;
+        background-size:cover;
+        height: 100vh;
+        }
+}
+
+
+
+.indexNav {
+    ul{
+        a{
+            text-decoration: none;   
+            color: $texto-secundario;
+            transition:0.5s;
+            font-size: 1.3em;
+        &:hover {
+	        color: $primario;
+	        cursor: pointer;
+            }
+        }
+        
+    }
+    }
+
+
+.indexMain {
+    padding-top: 5rem; 
+    .indexMain__titulo {
+    color: $primario;
+    font-weight: $font-bold;
+    font-size: 4.5em;
+    text-shadow: 2px 2px 3px $texto;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+}
+    .indexMain__subtitulo {
+        font-size: 2.5em;
+        color: $texto;
+        -webkit-text-stroke: .3px  $primario;
+        text-shadow: .8px .8px 1.3px $primario;
+        font-weight: $font-bold;
+        font-family: 'Lato', sans-serif;
+        font-weight: 400;
+      
+    }
+}
+
+.indexMain__boton{
+    background-color: $secundario;
+	transition: 0.5s;
+	border: 0.5px solid $texto;
+    &:hover {
+            background-color: $texto;
+    } 
+    .indexMain__link{
+        text-decoration: none;
+        color: $texto-secundario;
+       
+}
+}
+
+.indexFooter {
+
+ .indexFooter__img {
+	width: 50px;
+}
+}
+
+
+/*SERVICIOS****/
+
+
+.carouselServicios {
+	width: 80vw;
+	margin: auto;
+	margin-top: 1.7rem;
+	padding-top: 2rem;
+    .carousel__img {
+        margin: auto;
+
+    }
+}
+
+#masajes, #faciales, #meditacion, #manicuria, #circuito {
+    h3 {
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+    font-weight: $font-bold;
+    font-size: 3em;
+ }
+    img{
+    margin-top: 4rem ;
+}
+}
+
+
+
+#masajes, #meditacion, #circuito {
+	background-color: #eeeeee;
+}
+
+/*CONTACTO***/
+
+.contactMain {
+    margin-top: 20vh;
+    .consultas__titulo, .infoContacto__titulo {
+        font-size: 2em;
+        font-weight: $font-bold;
+    }
+    .consultas__subtitulo, .infoContacto__subtitulo {
+        font-size: 1.1em;
+    }
+    .formConsultas__label {
+        font-weight: $font-bold;
+        }
+    .formConsultas__label--check {
+        font-weight: $font-regular;
+    }
+    .formConsultas__button {
+        background-color: $secundario;
+        color: $texto-secundario;
+        transition: 0.5s;
+        &:hover {
+            background-color: $texto;
+        }
+    }
+    .formConsultas__input {
+        border: 1px solid $primario;
+    }
+    .infoContacto__item {
+        list-style-type: none;
+        font-size: 1.5em;
+        padding: 1rem;
+    }
+    
+    .infoContacto__item--horarios {
+        font-size: 1em;
+        padding-top: 2rem;
+    }
+    }
+
+
+
+/*FOOTER NO INDEX***/
+
+
+.noIndexFooter {
+    .noIndexFooter__img {
+       width: 35px;
+       padding-top: 1rem;
+    }
+    .noIndexFooter__form {
+       max-width: 100%;
+       .footerForm__button {
+        background-color: $secundario;
+        border: 1px solid $texto;
+        color: $texto-secundario;
+        transition: 0.5s;
+        &:hover {
+            background-color: $texto;
+        }
+
+       }
+    }
+}
+ /*NO INDEX NAV***/
+
+.nav {
+    background-color: #fff;
+    .nav__item {
+        a {
+            text-decoration: none;
+            transition:0.5s;
+            color: $secundario;
+            font-size: 1.3em;
+            &:hover {
+                color: $texto;
+            }
+        }
+
+    }
+    .nav__button {
+        border: 2.3px solid $secundario;
+        color: $texto;
+    &:hover {
+        background-color: $secundario;
+        color: $texto-secundario;
+    }
+    }
+}
+
+
+/*RESERVAS***/
+
+.formReservas {
+    margin-top: 17vh;
+    
+    .formReservas__titulo {
+        font-size: 2em;
+        font-weight: $font-bold;
+    }
+
+    .formReservas__label {
+        font-size: 15px;
+    }
+    .formReservas__button {
+        background-color: $secundario;
+        border: 1px solid $texto;
+        color: $texto-secundario;
+        transition: 0.5s;
+        &:hover {
+            background-color: $texto;
+        }
+
+    }
+    
+}
+
+.carouselOpiniones {
+    margin-top: 20vh;
+    .carouselOpiniones__subtitulo {
+        font-size: 1.2em;
+    }
+    .carouselOpiniones__inner {
+        width: 100%;
+        border: 0.5px solid $secundario;
+    }
+    
+    
+}
+
+/*GALERIA***/
+
+.tituloGaleria {
+    font-size:3.5em;
+    font-weight: $font-bold;
+    margin-top: 15vh;
+}
+
+/*SOBRENOSOTROS***/
+
+.tituloSobreNosotros {
+    margin-top: 18vh;
+    font-size:3.5em;
+    font-weight: $font-bold;
+   
+} 
+
+.sobreNosotrosImg {
+    img {
+        width: 200px;
+        margin: auto;
+        border: 0.5px solid $secundario;
+    }
+}

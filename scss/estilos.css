@@ -1,0 +1,202 @@
+body {
+  font-family: "montserrat", sans-serif;
+  font-weight: 400;
+}
+
+.type-light {
+  font-family: "montserrat", sans-serif;
+  font-weight: 200;
+}
+
+.type-semilight {
+  font-family: "montserrat", sans-serif;
+  font-weight: 300;
+}
+
+.type-regular {
+  font-family: "montserrat", sans-serif;
+  font-weight: 400;
+}
+
+.type-bold {
+  font-family: "montserrat", sans-serif;
+  font-weight: 600;
+}
+
+/*GENERAL***/
+body {
+  background-color: #f9f9f9;
+  font-size: 12px;
+  color: #061a10;
+}
+
+/*INDEX****/
+.fondoIndex {
+  background-image: url(../images/fondofiltro3.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 110vh;
+}
+
+.indexNav ul a {
+  text-decoration: none;
+  color: #e2e2a3;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  font-size: 1.3em;
+}
+
+.indexNav ul a:hover {
+  color: #d8916f;
+  cursor: pointer;
+}
+
+.indexMain {
+  padding-top: 10rem;
+}
+
+.indexMain .indexMain__titulo {
+  color: #d9bd83;
+  font-weight: 600;
+  font-size: 4.1em;
+  text-shadow: 2px 2px 3px #061a10;
+}
+
+.indexMain .indexMain__subtitulo {
+  font-size: 1.5em;
+  color: #d9bd83;
+  -webkit-text-stroke: 0.5px #e2e2a3;
+}
+
+.indexMain__boton {
+  background-color: #0f4545;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  border: 0.5px solid #061a10;
+}
+
+.indexMain__boton:hover {
+  background-color: #061a10;
+}
+
+.indexMain__boton .indexMain__link {
+  text-decoration: none;
+  color: #e2e2a3;
+}
+
+.indexFooter .indexFooter__img {
+  width: 50px;
+}
+
+/*SERVICIOS****/
+.carousel {
+  width: 80vw;
+  margin: auto;
+  margin-top: 1.7rem;
+  padding-top: 2rem;
+}
+
+.carousel .carousel__img {
+  margin: auto;
+}
+
+#masajes h3, #faciales h3, #meditacion h3, #manicuria h3, #circuito h3 {
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+  font-weight: 600;
+  font-size: 3em;
+}
+
+#masajes img, #faciales img, #meditacion img, #manicuria img, #circuito img {
+  margin-top: 4rem;
+}
+
+#masajes, #meditacion, #circuito {
+  background-color: #eeeeee;
+}
+
+/*CONTACTO***/
+.contactMain {
+  margin-top: 20vh;
+}
+
+.contactMain .consultas__titulo, .contactMain .infoContacto__titulo {
+  font-size: 2em;
+  font-weight: 600;
+}
+
+.contactMain .consultas__subtitulo, .contactMain .infoContacto__subtitulo {
+  font-size: 1.1em;
+}
+
+.contactMain .formConsultas__label {
+  font-weight: 600;
+}
+
+.contactMain .formConsultas__label--check {
+  font-weight: 400;
+}
+
+.contactMain .formConsultas__button {
+  background-color: #0f4545;
+  color: #e2e2a3;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.contactMain .formConsultas__button:hover {
+  background-color: #061a10;
+}
+
+.contactMain .formConsultas__input {
+  border: 1px solid #d9bd83;
+}
+
+.contactMain .infoContacto__item {
+  list-style-type: none;
+  font-size: 1.5em;
+  padding: 1rem;
+}
+
+.contactMain .infoContacto__item--horarios {
+  font-size: 1em;
+  padding-top: 2rem;
+}
+
+/*FOOTER NO INDEX***/
+.noIndexFooter .noIndexFooter__img {
+  width: 35px;
+  padding-top: 1rem;
+}
+
+.noIndexFooter .noIndexFooter__form {
+  max-width: 100%;
+}
+
+/*NO INDEX NAV***/
+.nav {
+  background-color: #fff;
+}
+
+.nav .nav__item a {
+  text-decoration: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  color: #0f4545;
+  font-size: 1.3em;
+}
+
+.nav .nav__item a:hover {
+  color: #061a10;
+}
+
+.nav .nav__button {
+  border: 2.3px solid #0f4545;
+  color: #061a10;
+}
+
+.nav .nav__button:hover {
+  background-color: #0f4545;
+  color: #e2e2a3;
+}
+/*# sourceMappingURL=estilos.css.map */
