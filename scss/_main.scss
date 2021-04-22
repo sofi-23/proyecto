@@ -4,6 +4,7 @@ body {
     background-color: #f9f9f9;
     font-size: 12px;
     color: $texto;
+    height: 100%;
 }
 
 /*INDEX****/
@@ -18,26 +19,53 @@ body {
         }
 }
 
+/*TABLETS***/
 
+@media (max-width: 991px) {
+    .indexNav {
+    position: absolute;
+    .navbar-toggler {
+        position: fixed;
+        top: 0;
+        right: 0;
+        margin: 1rem;
+    }
+    .navbar-collapse {
+        transition: 0.7s;
+            .navbar-nav {
+                position:relative;
+                background-color: rgba(15, 69, 69, 0.7);
+                z-index:100;
+                border-radius: 2%;
+                
+                
+       
+
+    }
+    }
+    
+}
+    .indexText {
+        margin-top: 5rem;
+    }
+    
+
+}
 
 .indexNav {
     ul{
         .dropdown-menu {
-            background-color: $texto-secundario;
-             
-         
-         
+            background-color: rgba(226, 226, 163, .5);
             .dropdown-item {
-                color: $secundario;
-                font-size: 1em;
+                 font-size: 1em;
+                 color: $texto;
+             
                 &:hover {
                     background-color: $primario;
                 }
+              
                
            
-            }
-            .dropdown-item-special {
-                color: $texto;
             }
         }
         a{
@@ -45,6 +73,7 @@ body {
             color: $texto-secundario;
             transition:0.5s;
             font-size: 1.3em;
+            
         &:hover {
 	        color: $primario;
 	        cursor: pointer;
