@@ -1,0 +1,39 @@
+/*TABLET Y MOBILE***/
+
+@media (max-width: 991px) {
+    .fondoIndex {
+        height: 100vh;
+   
+        .indexNav {
+    position: absolute;
+    
+            .navbar-toggler {
+        position: fixed;
+        top: 0;
+        right: 0;
+        margin: 1rem;
+      
+    }
+            .navbar-collapse {
+            transition: 0.7s;
+            .navbar-nav {
+                position:relative;
+                background-color: #171934;
+                z-index:100;
+                border-radius: 2%;
+    
+}
+}
+}
+    .indexText {
+        margin-top: 5rem;
+    }
+
+
+
+
+}
+.indexFooter {
+    margin-top: 2rem;
+}
+}
