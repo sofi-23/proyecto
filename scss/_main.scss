@@ -1,61 +1,72 @@
 /*GENERAL***/
-
+html {
+    height: 100%;
 body {
     background-color: #f9f9f9;
     font-size: 12px;
     color: $texto;
     height: 100%;
 }
-
+}
 /*INDEX****/
 
 
-@media (min-width: 768px) {
+
     .fondoIndex {
-        background-image: url(../images/fondo2.jpg);
+        background-image: url(../images/fondo1.jpg);
         background-position: center;
         background-size:cover;
-        height: 100vh;
         }
+/*DESKTOP***/
+
+@media (min-width: 991px) {
+    .fondoIndex {
+        height: 100%;
+    }
 }
 
 /*TABLETS***/
 
 @media (max-width: 991px) {
+    .fondoIndex {
+        height: 100vh;
+   
     .indexNav {
     position: absolute;
+    
     .navbar-toggler {
         position: fixed;
         top: 0;
         right: 0;
         margin: 1rem;
+      
     }
     .navbar-collapse {
         transition: 0.7s;
             .navbar-nav {
                 position:relative;
-                background-color: rgba(15, 69, 69, 0.7);
+                background-color: #171934;
                 z-index:100;
                 border-radius: 2%;
                 
                 
        
 
-    }
+    
     }
     
 }
     .indexText {
         margin-top: 5rem;
     }
-    
-
 }
 
+}
+}
 .indexNav {
     ul{
         .dropdown-menu {
-            background-color: rgba(226, 226, 163, .5);
+            background-color: #171934;
             .dropdown-item {
                  font-size: 1em;
                  color: $texto;
@@ -70,7 +81,7 @@ body {
         }
         a{
             text-decoration: none;   
-            color: $texto-secundario;
+            color: $secundario;
             transition:0.5s;
             font-size: 1.3em;
             
@@ -107,25 +118,26 @@ body {
 }
 
 .indexMain__boton{
-    background-color: $secundario;
+    background: rgba(23, 25, 52, 0.3);
 	transition: 0.5s;
-	border: 0.5px solid $texto;
+	border: 0.5px solid $secundario;
     &:hover {
-            background-color: $texto;
+            background-color: $secundario;
     } 
     .indexMain__link{
         text-decoration: none;
         color: $texto-secundario;
+        &:hover {
+            color: $texto-secundario;
+        }
        
 }
 }
 
-.indexFooter {
-
  .indexFooter__img {
 	width: 50px;
 }
-}
+
 
 
 /*SERVICIOS****/

@@ -1,5 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,600;1,600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300;1,400&family=Open+Sans&display=swap");
+/*$primario:#d9bd83;
+$secundario: #0f4545;
+$terciario: #d8916f;
+$fondo: #f9f9f9;
+$texto: #061a10;
+$texto-secundario: #e2e2a3;*/
 body {
   font-family: "montserrat", sans-serif;
   font-weight: 400; }
@@ -21,85 +27,94 @@ body {
   font-weight: 600; }
 
 /*GENERAL***/
-body {
-  background-color: #f9f9f9;
-  font-size: 12px;
-  color: #061a10;
+html {
   height: 100%; }
+  html body {
+    background-color: #f9f9f9;
+    font-size: 12px;
+    color: #000311;
+    height: 100%; }
 
 /*INDEX****/
-@media (min-width: 768px) {
+.fondoIndex {
+  background-image: url(../images/fondo1.jpg);
+  background-position: center;
+  background-size: cover; }
+
+/*DESKTOP***/
+@media (min-width: 991px) {
   .fondoIndex {
-    background-image: url(../images/fondo2.jpg);
-    background-position: center;
-    background-size: cover;
-    height: 100vh; } }
+    height: 100%; } }
 
 /*TABLETS***/
 @media (max-width: 991px) {
-  .indexNav {
-    position: absolute; }
-    .indexNav .navbar-toggler {
-      position: fixed;
-      top: 0;
-      right: 0;
-      margin: 1rem; }
-    .indexNav .navbar-collapse {
-      transition: 0.7s; }
-      .indexNav .navbar-collapse .navbar-nav {
-        position: relative;
-        background-color: rgba(15, 69, 69, 0.7);
-        z-index: 100;
-        border-radius: 2%; }
-  .indexText {
-    margin-top: 5rem; } }
+  .fondoIndex {
+    height: 100vh; }
+    .fondoIndex .indexNav {
+      position: absolute; }
+      .fondoIndex .indexNav .navbar-toggler {
+        position: fixed;
+        top: 0;
+        right: 0;
+        margin: 1rem; }
+      .fondoIndex .indexNav .navbar-collapse {
+        transition: 0.7s; }
+        .fondoIndex .indexNav .navbar-collapse .navbar-nav {
+          position: relative;
+          background-color: #171934;
+          z-index: 100;
+          border-radius: 2%; }
+      .fondoIndex .indexNav .indexText {
+        margin-top: 5rem; } }
 
 .indexNav ul .dropdown-menu {
-  background-color: rgba(226, 226, 163, 0.5); }
+  background-color: #171934; }
   .indexNav ul .dropdown-menu .dropdown-item {
     font-size: 1em;
-    color: #061a10; }
+    color: #000311; }
     .indexNav ul .dropdown-menu .dropdown-item:hover {
-      background-color: #d9bd83; }
+      background-color: #80a0b1; }
 
 .indexNav ul a {
   text-decoration: none;
-  color: #e2e2a3;
+  color: #171934;
   transition: 0.5s;
   font-size: 1.3em; }
   .indexNav ul a:hover {
-    color: #d9bd83;
+    color: #80a0b1;
     cursor: pointer; }
 
 .indexMain {
   padding-top: 5rem; }
   .indexMain .indexMain__titulo {
-    color: #d9bd83;
+    color: #80a0b1;
     font-weight: 600;
     font-size: 4.5em;
-    text-shadow: 2px 2px 3px #061a10;
+    text-shadow: 2px 2px 3px #000311;
     font-family: 'Lato', sans-serif;
     font-weight: 300; }
   .indexMain .indexMain__subtitulo {
     font-size: 2.5em;
-    color: #061a10;
-    -webkit-text-stroke: 0.3px #d9bd83;
-    text-shadow: 0.8px 0.8px 1.3px #d9bd83;
+    color: #000311;
+    -webkit-text-stroke: 0.3px #80a0b1;
+    text-shadow: 0.8px 0.8px 1.3px #80a0b1;
     font-weight: 600;
     font-family: 'Lato', sans-serif;
     font-weight: 400; }
 
 .indexMain__boton {
-  background-color: #0f4545;
+  background: rgba(23, 25, 52, 0.3);
   transition: 0.5s;
-  border: 0.5px solid #061a10; }
+  border: 0.5px solid #171934; }
   .indexMain__boton:hover {
-    background-color: #061a10; }
+    background-color: #171934; }
   .indexMain__boton .indexMain__link {
     text-decoration: none;
-    color: #e2e2a3; }
+    color: #b2dee5; }
+    .indexMain__boton .indexMain__link:hover {
+      color: #b2dee5; }
 
-.indexFooter .indexFooter__img {
+.indexFooter__img {
   width: 50px; }
 
 /*SERVICIOS****/
@@ -136,13 +151,13 @@ body {
   .contactMain .formConsultas__label--check {
     font-weight: 400; }
   .contactMain .formConsultas__button {
-    background-color: #0f4545;
-    color: #e2e2a3;
+    background-color: #171934;
+    color: #b2dee5;
     transition: 0.5s; }
     .contactMain .formConsultas__button:hover {
-      background-color: #061a10; }
+      background-color: #000311; }
   .contactMain .formConsultas__input {
-    border: 1px solid #d9bd83; }
+    border: 1px solid #80a0b1; }
   .contactMain .infoContacto__item {
     list-style-type: none;
     font-size: 1.5em;
@@ -159,12 +174,12 @@ body {
 .noIndexFooter .noIndexFooter__form {
   max-width: 100%; }
   .noIndexFooter .noIndexFooter__form .footerForm__button {
-    background-color: #0f4545;
-    border: 1px solid #061a10;
-    color: #e2e2a3;
+    background-color: #171934;
+    border: 1px solid #000311;
+    color: #b2dee5;
     transition: 0.5s; }
     .noIndexFooter .noIndexFooter__form .footerForm__button:hover {
-      background-color: #061a10; }
+      background-color: #000311; }
 
 /*NO INDEX NAV***/
 .nav {
@@ -172,16 +187,16 @@ body {
   .nav .nav__item a {
     text-decoration: none;
     transition: 0.5s;
-    color: #0f4545;
+    color: #171934;
     font-size: 1.3em; }
     .nav .nav__item a:hover {
-      color: #061a10; }
+      color: #000311; }
   .nav .nav__button {
-    border: 2.3px solid #0f4545;
-    color: #061a10; }
+    border: 2.3px solid #171934;
+    color: #000311; }
     .nav .nav__button:hover {
-      background-color: #0f4545;
-      color: #e2e2a3; }
+      background-color: #171934;
+      color: #b2dee5; }
 
 /*RESERVAS***/
 .formReservas {
@@ -192,12 +207,12 @@ body {
   .formReservas .formReservas__label {
     font-size: 15px; }
   .formReservas .formReservas__button {
-    background-color: #0f4545;
-    border: 1px solid #061a10;
-    color: #e2e2a3;
+    background-color: #171934;
+    border: 1px solid #000311;
+    color: #b2dee5;
     transition: 0.5s; }
     .formReservas .formReservas__button:hover {
-      background-color: #061a10; }
+      background-color: #000311; }
 
 .carouselOpiniones {
   margin-top: 20vh; }
@@ -205,7 +220,7 @@ body {
     font-size: 1.2em; }
   .carouselOpiniones .carouselOpiniones__inner {
     width: 100%;
-    border: 0.5px solid #0f4545; }
+    border: 0.5px solid #171934; }
 
 /*GALERIA***/
 .tituloGaleria {
@@ -222,4 +237,4 @@ body {
 .sobreNosotrosImg img {
   width: 200px;
   margin: auto;
-  border: 0.5px solid #0f4545; }
+  border: 0.5px solid #171934; }
