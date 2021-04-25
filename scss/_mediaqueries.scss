@@ -31,6 +31,27 @@
 }
 .indexFooter {
     margin-top: 2rem;
- 
+
 }
+}
+
+
+/*MOBILE***/
+
+@media (max-width: 768px) {
+    .indexText {
+        margin-top: 2rem !important;
+
+        .indexMain__subtitulo {
+            font-size: 2em;
+            margin-top: 1rem;
+}
+}
+    .indexMain__boton {
+        margin-top: 1.3rem;
+    }
+    .indexFooter {
+        margin-top: 3rem;
+    }
+
 }

@@ -42,11 +42,6 @@ html {
   background-size: cover;
   height: 100vh; }
 
-/*@media (min-width: 991px) {
-    .fondoIndex {
-        height: 100vh;
-    }
-}*/
 .indexNav ul .dropdown-menu {
   background-color: #171934; }
   .indexNav ul .dropdown-menu .dropdown-item {
@@ -241,3 +236,15 @@ html {
       margin-top: 5rem; }
   .indexFooter {
     margin-top: 2rem; } }
+
+/*MOBILE***/
+@media (max-width: 768px) {
+  .indexText {
+    margin-top: 2rem !important; }
+    .indexText .indexMain__subtitulo {
+      font-size: 2em;
+      margin-top: 1rem; }
+  .indexMain__boton {
+    margin-top: 1.3rem; }
+  .indexFooter {
+    margin-top: 3rem; } }
