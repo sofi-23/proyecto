@@ -7,96 +7,69 @@ body {
    
 }
 /*INDEX****/
-
-
-
-    .fondoIndex {
-        background-image: url(../images/fondo1.jpg);
-        background-position: center;
-        background-size:cover;
-        height: 100vh;
-        }
-
-
-
-
-.indexNav {
-    ul{
-        .dropdown-menu {
-            background-color: #171934;
-            .dropdown-item {
-                 font-size: 1em;
-                 color: $texto;
-             
-                &:hover {
-                    background-color: $primario;
-                }
-              
-               
-           
-            }
-        }
-        a{
-            text-decoration: none;   
-            color: $secundario;
-            transition:0.5s;
-            font-size: 1.3em;
-            
-        &:hover {
-	        color: $primario;
-	        cursor: pointer;
-            }
-        }
-        
-    }
-    }
-
-
-.indexMain {
-    padding-top: 5rem; 
-    .indexMain__titulo {
-    color: $primario;
-    font-weight: $font-bold;
-    font-size: 4.5em;
-    text-shadow: 2px 2px 3px $texto;
-    font-family: 'Lato', sans-serif;
-    font-weight: 300;
-}
-    .indexMain__subtitulo {
-        font-size: 2.5em;
-        color: $texto;
-        -webkit-text-stroke: .3px  $primario;
-        text-shadow: .8px .8px 1.3px $primario;
-        font-weight: $font-bold;
-        font-family: 'Lato', sans-serif;
-        font-weight: 400;
+.fondoIndex {
+  background-image: url(../images/fondo1.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh; 
+  .navbar-nav {
+      position: absolute;
+      z-index: 100;
+      background: rgba(23, 25, 52, 0.8);
+      left: 0;
+      &:hover {
+          background: $secundario;
+      }
+      a {
+      color: $texto-secundario;
       
+        }
+        .submenu {
+          background: rgba(128, 160, 177, 0.8);
+          font-size: 1em;
+          &:hover {
+              background: $primario;
+          }
+          a {
+              color: $secundario;
+          }
+      }
+  }
+  .indexMain {
+      margin-top:5.5rem;
+      .indexMain__titulo {
+          font-size: 3em;
+          font-weight: $font-bold;
+          text-shadow: .8px .8x 3px $secundario;
+      }
+      .indexMain__subtitulo {
+          margin-top: 1rem;
+          font-size: 1.4em;
+      }
+      .indexMain__boton {
+          margin-top: 1.5rem;
+          background: rgba(23, 25, 52, 0.3);
+          transition: 0.5s;
+          border: 0.5px solid #171934;
+          &:hover {
+              background: $secundario;
+          }
+          a {
+              text-decoration: none;
+              color: $texto-secundario;
+          }
+         
+      }
+  }
+    
+
+    .indexFooter {
+        margin-top: 5rem;
+    img {
+        width: 3.5rem;
     }
 }
-
-.indexMain__boton{
-    background: rgba(23, 25, 52, 0.3);
-	transition: 0.5s;
-	border: 0.5px solid $secundario;
-    &:hover {
-            background-color: $secundario;
-    } 
-    .indexMain__link{
-        text-decoration: none;
-        color: $texto-secundario;
-        &:hover {
-            color: $texto-secundario;
-        }
-       
 }
-}
-
- .indexFooter__img {
-	width: 50px;
-}
-
-
-
 /*SERVICIOS****/
 
 
