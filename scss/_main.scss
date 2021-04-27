@@ -17,6 +17,7 @@ body {
       z-index: 100;
       background: rgba(23, 25, 52, 0.8);
       left: 0;
+      transition: .5s;
       &:hover {
           background: $secundario;
       }
@@ -27,12 +28,6 @@ body {
         .submenu {
           background: rgba(128, 160, 177, 0.8);
           font-size: 1em;
-          &:hover {
-              background: $primario;
-          }
-          a {
-              color: $secundario;
-          }
       }
   }
   .indexMain {
