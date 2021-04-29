@@ -2,7 +2,7 @@
 
 body {
     background-color: #f9f9f9;
-    font-size: 12px;
+    font-size: 13px;
     color: $texto;
    
 }
@@ -23,7 +23,7 @@ body {
       }
       a {
       color: $texto-secundario;
-      
+      font-size: 1.3em;
         }
         .submenu {
           background: rgba(128, 160, 177, 0.8);
@@ -71,8 +71,8 @@ body {
 .carouselServicios {
 	width: 80vw;
 	margin: auto;
-	margin-top: 1.7rem;
-	padding-top: 2rem;
+	margin-top: 15vh;
+    margin-bottom: 3rem;
     .carousel__img {
         margin: auto;
 
@@ -80,19 +80,28 @@ body {
 }
 
 #masajes, #faciales, #meditacion, #manicuria, #circuito {
+    .articuloServicios {
+     background: rgba($color: $secundario, $alpha: .1);
+     margin-top: 1rem;
+     padding: .3rem;
+     
+    
     h3 {
-    margin-top: 5rem;
-    margin-bottom: 3rem;
+    margin-top: 4rem;
+    margin-bottom: 1rem;
     font-weight: $font-bold;
     font-size: 3em;
  }
     img{
-    margin-top: 4rem ;
+    margin-top: 1rem ;
 }
 }
+}
+/*.articuloServicios.fondoGris {
+         background: #eeeeee;
+        }
 
-
-
+    }*/
 #masajes, #meditacion, #circuito {
 	background-color: #eeeeee;
 }
@@ -171,20 +180,32 @@ body {
             transition:0.5s;
             color: $secundario;
             font-size: 1.3em;
+            text-align: center;
             &:hover {
                 color: $texto;
             }
         }
+        
+        .noIndexSubmenu {
+            background: $texto-secundario;
+            font-size: 1em;
+           
+        }
 
     }
     .nav__button {
-        border: 2.3px solid $secundario;
-        color: $texto;
-    &:hover {
-        background-color: $secundario;
+        text-align: center;
+        display: block;
+        font-size: 1.4em; 
+        background: $secundario;
+        width: 180px;
+        margin: auto;
         color: $texto-secundario;
+        
+
+
     }
-    }
+   
 }
 
 
@@ -230,7 +251,7 @@ body {
 /*GALERIA***/
 
 .tituloGaleria {
-    font-size:3.5em;
+    font-size:2.2em;
     font-weight: $font-bold;
     margin-top: 15vh;
 }
@@ -239,7 +260,7 @@ body {
 
 .tituloSobreNosotros {
     margin-top: 18vh;
-    font-size:3.5em;
+    font-size:2.2em;
     font-weight: $font-bold;
    
 } 

@@ -28,7 +28,7 @@ body {
 /*GENERAL***/
 body {
   background-color: #f9f9f9;
-  font-size: 12px;
+  font-size: 13px;
   color: #000311;
 }
 
@@ -55,6 +55,7 @@ body {
 
 .fondoIndex .navbar-nav a {
   color: #b2dee5;
+  font-size: 1.3em;
 }
 
 .fondoIndex .navbar-nav .submenu {
@@ -107,25 +108,36 @@ body {
 .carouselServicios {
   width: 80vw;
   margin: auto;
-  margin-top: 1.7rem;
-  padding-top: 2rem;
+  margin-top: 15vh;
+  margin-bottom: 3rem;
 }
 
 .carouselServicios .carousel__img {
   margin: auto;
 }
 
-#masajes h3, #faciales h3, #meditacion h3, #manicuria h3, #circuito h3 {
-  margin-top: 5rem;
-  margin-bottom: 3rem;
+#masajes .articuloServicios, #faciales .articuloServicios, #meditacion .articuloServicios, #manicuria .articuloServicios, #circuito .articuloServicios {
+  background: rgba(23, 25, 52, 0.1);
+  margin-top: 1rem;
+  padding: .3rem;
+}
+
+#masajes .articuloServicios h3, #faciales .articuloServicios h3, #meditacion .articuloServicios h3, #manicuria .articuloServicios h3, #circuito .articuloServicios h3 {
+  margin-top: 4rem;
+  margin-bottom: 1rem;
   font-weight: 600;
   font-size: 3em;
 }
 
-#masajes img, #faciales img, #meditacion img, #manicuria img, #circuito img {
-  margin-top: 4rem;
+#masajes .articuloServicios img, #faciales .articuloServicios img, #meditacion .articuloServicios img, #manicuria .articuloServicios img, #circuito .articuloServicios img {
+  margin-top: 1rem;
 }
 
+/*.articuloServicios.fondoGris {
+         background: #eeeeee;
+        }
+
+    }*/
 #masajes, #meditacion, #circuito {
   background-color: #eeeeee;
 }
@@ -211,19 +223,25 @@ body {
   transition: 0.5s;
   color: #171934;
   font-size: 1.3em;
+  text-align: center;
 }
 
 .nav .nav__item a:hover {
   color: #000311;
 }
 
-.nav .nav__button {
-  border: 2.3px solid #171934;
-  color: #000311;
+.nav .nav__item .noIndexSubmenu {
+  background: #b2dee5;
+  font-size: 1em;
 }
 
-.nav .nav__button:hover {
-  background-color: #171934;
+.nav .nav__button {
+  text-align: center;
+  display: block;
+  font-size: 1.4em;
+  background: #171934;
+  width: 180px;
+  margin: auto;
   color: #b2dee5;
 }
 
@@ -268,7 +286,7 @@ body {
 
 /*GALERIA***/
 .tituloGaleria {
-  font-size: 3.5em;
+  font-size: 2.2em;
   font-weight: 600;
   margin-top: 15vh;
 }
@@ -276,7 +294,7 @@ body {
 /*SOBRENOSOTROS***/
 .tituloSobreNosotros {
   margin-top: 18vh;
-  font-size: 3.5em;
+  font-size: 2.2em;
   font-weight: 600;
 }
 
@@ -290,9 +308,11 @@ body {
 @media (min-width: 768px) {
   body {
     font-size: 20px;
+    /*index***/
+    /*nav no index***/
   }
   body .fondoIndex {
-    height: 100%;
+    height: 100vh;
   }
   body .fondoIndex .logo {
     width: 9rem;
@@ -313,11 +333,22 @@ body {
   }
   body .fondoIndex .indexFooter img {
     width: 4.5rem;
+    height: 4.5rem;
+  }
+  body .logo {
+    width: 9rem;
+  }
+  body .hamburguesa {
+    width: 30px;
+  }
+  body .nav__item a {
+    font-size: 1.5em;
   }
 }
 
 /*DESKTOP***/
-@media (min-width: 992px) {
+@media (min-width: 1100px) {
+  /*index***/
   body {
     font-size: 16px;
   }
@@ -347,7 +378,53 @@ body {
   }
   .indexFooter img {
     width: 4rem;
-    margin-bottom: 1.5rem;
+    height: 4rem;
+    margin-bottom: 2rem;
+  }
+  /*no index nav***/
+  .noIndexNav .nav__button {
+    border: 1.5px solid #171934;
+    padding: .3rem;
+    background: rgba(0, 0, 0, 0);
+    color: #171934;
+    font-size: 1.3em;
+    -webkit-transition: .5s;
+    transition: .5s;
+  }
+  .noIndexNav .nav__button:hover {
+    background-color: #171934;
+    color: #b2dee5;
+  }
+  .noIndexNav .nav__item .nav-link {
+    font-size: 1em;
+  }
+  .noIndexNav .nav__item .nav-link:hover {
+    color: #80a0b1;
+  }
+  /*SERVICIOS***/
+  .carousel {
+    margin-top: 18vh !important;
+  }
+  .carousel .carousel-caption {
+    color: #171934;
+    background: rgba(178, 222, 229, 0.3);
+  }
+  .articleDos h3 {
+    margin-top: 2rem;
+    padding-top: 1rem;
+  }
+  .articleDos .articuloServicios {
+    border: 0;
+  }
+}
+
+/*MOBILE***/
+@media (max-width: 768px) {
+  /*SERVICIOS***/
+  .articuloServicios {
+    border: 0.05px solid #171934;
+    -webkit-box-shadow: 0.5px 0.5px 1px #000311;
+            box-shadow: 0.5px 0.5px 1px #000311;
   }
 }
 /*# sourceMappingURL=estilos.css.map */

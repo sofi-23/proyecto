@@ -15,12 +15,12 @@
 
 </head>
 <header>
-	<nav class="nav navbar navbar-expand-lg fixed-top w-100">
+	<nav class="nav navbar navbar-expand-lg fixed-top w-100 noIndexNav">
   <a class="navbar-brand" href="../index.html">
-    <img src="../images/logochicoalreves.png" width="65" height="" alt="40" loading="lazy" class="ml-lg-5">
+    <img src="../images/logonegro.png" width="65" height="" alt="40" loading="lazy" class="logo">
   </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
+    <img src="../images/hamburguesa.png" class="hamburguesa" width="20px">
   </button>
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -32,9 +32,9 @@
         <a class="nav-link dropdown-toggle" href="servicios.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Servicios<span class="sr-only">(current)</span>
         </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <div class="dropdown-menu noIndexSubmenu" aria-labelledby="navbarDropdown">
           
-          <a class="dropdown-item active" href="servicios.html">Explorar servicios</a>
+          <a class="dropdown-item" href="servicios.html">Explorar servicios</a>
        <div class="dropdown-divider"></div>
        <a class="dropdown-item" href="servicios.html#masajes">Masajes</a>
        <a class="dropdown-item" href="servicios.html#meditacion">Meditación</a>
@@ -54,7 +54,7 @@
       </li>
       
     </ul>
-    <a class="btn btn-bd-download ml-md-3 nav__button" href="reservas.html">Reservas</a>
+    <a class="btn btn-bd-download nav__button" href="reservas.html">Reservas</a>
   </div>
 </nav>
 </header>
@@ -94,7 +94,7 @@
    <div class="carousel-item">
      <img src="../images/manicuriac.jpg" class="d-block w-100 carousel__img" alt="...">
      <div class="carousel-caption d-none d-md-block">
-       <h5>Manicuria y pedicuria</h5>
+       <h5>Manicuría y pedicuría</h5>
        <p> Con manicuristas certificados expertos.</p>
      </div>
    </div>
@@ -118,10 +118,11 @@
 </article>
   </main>
 
-  <article>
-<section class="container mt-lg-5"  id="masajes">
+  <article class="articleDos">
+<section class="mt-lg-5"  id="masajes">
  <h3 class="text-center blackFont">Masajes</h3>
- <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+ <div class="container m-auto align-items-center no-gutters">
+   <div class="row articuloServicios">
                    <div class="col-lg-7">
                      <img class="wow animate__animated animate__fadeIn animate__slow img-fluid mb-3 mb-lg-0 w-100" src="../images/masajepiedras2.jpg" alt="Masaje con piedras">
                    </div>
@@ -139,7 +140,8 @@
                          
                    </div>
 
-  
+  </div>
+  <div class="articuloServicios row">
                     <div class="col-lg-5">
                        <div class="featured-text text-center text-lg-left">
                            <h4 class="pr-lg-3">Bambuterapia</h4>
@@ -154,7 +156,8 @@
                    <div class="col-lg-7">
                      <img class="wow animate__animated animate__fadeIn animate__slow img-fluid mb-3 mb-lg-0 w-100" src="../images/bambuterapia1.jpg" alt="bambuterapia">
                    </div>
-           
+                  </div>
+                <div class="articuloServicios row">
                    <div class="col-lg-7">
                      <img class="wow animate__animated animate__fadeIn animate__slow img-fluid mb-3 mb-lg-0 w-100" src="../images/masajethai.jpg" alt="masaje tailandes">
                    </div>
@@ -169,6 +172,8 @@
                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
                        </div>
                    </div>
+                  </div>
+                  <div class="articuloServicios row">
                     <div class="col-lg-5">
                        <div class="featured-text text-center text-lg-left">
                            <h4 class="pr-lg-3">Masaje shiatsu</h4>
@@ -183,6 +188,8 @@
                     <div class="col-lg-7">
                      <img class="wow animate__animated animate__fadeIn animate__slow img-fluid mb-3 mb-lg-0 w-100" src="../images/shiatsu.jpg" alt="Masaje shiatsu">
                    </div>
+                  </div>
+                  <div class="articuloServicios row">
                     <div class="col-lg-7">
                      <img class="wow animate__animated animate__fadeIn animate__slow img-fluid mb-3 mb-lg-0 w-100" src="../images/reflexologia1.jpg" alt="Reflexologia">
                    </div>
@@ -197,6 +204,7 @@
                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
                        </div>
                    </div>
+                  </div>
                </div>
  
 
@@ -204,7 +212,8 @@
 
        <section class="container" id="faciales">
          <h3 class="text-center blackFont"> Tratamientos faciales</h3>
-         <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+         <div class="conatiner align-items-center no-gutters m-auto">
+           <div class="articuloServicios row fondoGris">
          <div class="col-lg-5">
                        <div class="featured-text text-center text-lg-left">
                            <h4 class="pr-lg-3">Limpieza de cutis</h4>
@@ -216,10 +225,13 @@
                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
                        </div>
                    </div>
+                   
                    <div class="col-lg-7">
                    <img class="wow animate__animated animate__fadeIn animate__slow img-fluid mb-3 mb-lg-0 w-100" src="../images/limpiezadecutis.jpg" alt="Limpieza de cutis">
                    </div>
-                   
+                  </div>
+
+                   <div class="articuloServicios row fondoGris">
                    <div class="col-lg-7">
                      <img class="wow animate__animated animate__fadeIn animate__slow img-fluid mb-3 mb-lg-0 w-100" src="../images/peeling.jpg" alt="Peeling químico">
                    </div>
@@ -235,6 +247,8 @@
                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
                        </div>
                    </div>
+                   </div>
+                   <div class="articuloServicios row fondoGris">
                    <div class="col-lg-5">
                        <div class="featured-text text-center text-lg-left">
                            <h4 class="pr-lg-3">Tratamiento con punta de diamante</h4>
@@ -249,6 +263,8 @@
                    <div class="col-lg-7">
                    <img class="wow animate__animated animate__fadeIn animate__slow img-fluid mb-3 mb-lg-0 w-100" src="../images/puntadediamante.jpg" alt="Tratamiento con punta de diamante">
                    </div>
+                  </div>
+                  <div class="articuloServicios row fondoGris">
                    <div class="col-lg-7">
                    <img class="wow animate__animated animate__fadeIn animate__slow img-fluid mb-3 mb-lg-0 w-100" src="../images/radiofrecuencia.jpg" alt="Radiofrecuencia">
                    </div>
@@ -263,12 +279,14 @@
                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
                        </div>
                    </div>
+                  </div>
                    
                    </div>
        </section>
        <section class="container" id="meditacion">
          <h3 class="text-center blackFont"> Meditación</h3>
-         <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+         <div class="contanier align-items-center no-gutters m-auto">
+          <div class="articuloServicios row">
          <div class="col-lg-5">
                        <div class="featured-text text-center text-lg-left">
                            <h4 class="pr-lg-3">Sesión de Mindfullnes grupal o individual</h4>
@@ -280,10 +298,13 @@
                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
                        </div>
                    </div>
+                  
+               
                    <div class="col-lg-7">
                    <img class="wow animate__animated animate__fadeIn animate__slow img-fluid mb-3 mb-lg-0 w-100" src="../images/mindfullness.jpg" alt="Meditación mindfullness">
                    </div>
-                   
+                    </div>
+                    <div class="articuloServicios row">
                    <div class="col-lg-7">
                      <img class="wow animate__animated animate__fadeIn animate__slow img-fluid mb-3 mb-lg-0 w-100" src="../images/zen.jpg" alt="Meditación zen">
                    </div>
@@ -299,6 +320,7 @@
                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
                        </div>
                    </div>
+                   </div>
 
 
                </div>
@@ -308,7 +330,8 @@
 
                   <section class="container" id="manicuria">
                     <h3 class="text-center blackFont"> Manicuria y pedicuria</h3>
-         <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+         <div class="container align-items-center no-gutters m-auto">
+          <div class="articuloServicios row fondoGris">
          <div class="col-lg-5">
                        <div class="featured-text text-center text-lg-left">
                            <h4 class="pr-lg-3">Spa de manos y pies</h4>
@@ -323,7 +346,8 @@
                    <div class="col-lg-7">
                    <img class="wow animate__animated animate__fadeIn animate__slow img-fluid mb-3 mb-lg-0 w-100" src="../images/spamanos.jpg" alt="Spa de manos">
                    </div>
-                   
+                   </div>
+                   <div class="articuloServicios row fondoGris">
                    <div class="col-lg-7">
                      <img class="wow animate__animated animate__fadeIn animate__slow img-fluid mb-3 mb-lg-0 w-100" src="../images/semipermanente.jpg" alt="Esmaltado semipermantente">
                    </div>
@@ -338,6 +362,7 @@
                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
                        </div>
+                      </div>
                    </div>
                             
        </section>
@@ -345,7 +370,8 @@
 
        <section class="container" id="circuito">
          <h3 class="text-center blackFont"> Circuito hídrico</h3>
-         <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+         <div class="container align-items-center no-gutters m-auto">
+          <div class="articuloServicios row">
          <div class="col-lg-5">
                        <div class="featured-text text-center text-lg-left">
                            <h4 class="pr-lg-3">Sauna finlandes</h4>
@@ -360,6 +386,8 @@
                    <div class="col-lg-7">
                    <img class="wow animate__animated animate__fadeIn animate__slow img-fluid mb-3 mb-lg-0 w-100" src="../images/sauna.jpg" alt="Sauna finlandes">
                    </div>
+                   </div>
+                   <div class="articuloServicios row">
                    
                    <div class="col-lg-7">
                      <img class="wow animate__animated animate__fadeIn animate__slow img-fluid mb-3 mb-lg-0 w-100" src="../images/circuito.jpg" alt="Jakuzzi">                    </div>
@@ -375,6 +403,8 @@
                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
                        </div>
                    </div>
+                  </div>
+                  <div class="articuloServicios row">
                    <div class="col-lg-5">
                        <div class="featured-text text-center text-lg-left">
                            <h4 class="pr-lg-3">Terma</h4>
@@ -391,7 +421,7 @@
                      <img class="wow animate__animated animate__fadeIn animate__slow img-fluid mb-3 mb-lg-0 w-100" src="../images/terma.jpg" alt="Terma">
                    </div>
 
-         
+         </div>
        </section>
      </article>
         <footer class="container-fluid noIndexFooter">
