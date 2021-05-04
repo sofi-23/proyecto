@@ -7,6 +7,10 @@ body {
    
 }
 
+.boldFont {
+    font-weight: 600;
+}
+
 /*INDEX****/
 
 .fondoIndex {
@@ -154,28 +158,39 @@ body {
 
 
 .noIndexFooter {
-    .noIndexFooter__img {
-       width: 35px;
-       padding-top: 1rem;
+    background: $secundario;
+    font-size: .9em;
+    color: $texto-secundario;
+    margin-top: 1rem;
+    padding-top:1.5rem;
+    
+    img {
+        width: 2.5rem;
     }
-    .noIndexFooter__form {
-       max-width: 100%;
-       .footerForm__button {
-        background-color: $secundario;
-        border: 1px solid $texto;
-        color: $texto-secundario;
-        transition: 0.5s;
-        &:hover {
-            background-color: $texto;
+    .form-control {
+        transition: .5s;
+        &:focus {
+         border-color: $primario;
+         box-shadow: 2px 2px 2px 2px 3px $primario;
         }
-
-       }
+    }
+    .btn-outline-secondary {
+        border-color: $texto-secundario;
+        color: $texto-secundario;
+        transition: .5s;
+        &:hover {
+            background: $texto-secundario;
+            color: $secundario;
+        }
     }
 }
  /*NO INDEX NAV***/
 
 .nav {
     background-color: #fff;
+    .logo {
+        width: 6em;
+    }
     .nav__item {
         a {
             text-decoration: none;
@@ -275,7 +290,7 @@ body {
 
 .sobreNosotrosImg {
     img {
-        width: 200px;
+        width: 160px;
         margin: auto;
         border: 0.5px solid $secundario;
     }

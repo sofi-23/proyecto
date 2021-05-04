@@ -43,6 +43,21 @@
     }
 
 }
+
+}
+/*no index footer***/
+
+.noIndexFooter {
+    img {
+        width: 3rem;
+    }
+}
+
+/*SOBRE NOSOTROS***/
+.sobreNosotrosImg {
+    img {
+        width: 180px;
+    }
 }
 }
 
@@ -133,6 +148,8 @@
 }
 
 }
+
+
 /*SERVICIOS***/
 .carousel {
     margin-top: 18vh !important;
@@ -149,6 +166,13 @@
     }
     .articuloServicios {
         border: 0;
+    }
+}
+
+/*SOBRE NOSOTROS***/
+.sobreNosotrosImg {
+    img {
+        width: 200px;
     }
 }
 }

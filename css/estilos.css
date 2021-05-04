@@ -32,6 +32,10 @@ body {
   color: #000311;
 }
 
+.boldFont {
+  font-weight: 600;
+}
+
 /*INDEX****/
 .fondoIndex {
   background-image: url(../images/fondo1.jpg);
@@ -190,30 +194,48 @@ body {
 }
 
 /*FOOTER NO INDEX***/
-.noIndexFooter .noIndexFooter__img {
-  width: 35px;
-  padding-top: 1rem;
-}
-
-.noIndexFooter .noIndexFooter__form {
-  max-width: 100%;
-}
-
-.noIndexFooter .noIndexFooter__form .footerForm__button {
-  background-color: #171934;
-  border: 1px solid #000311;
+.noIndexFooter {
+  background: #171934;
+  font-size: .9em;
   color: #b2dee5;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  margin-top: 1rem;
+  padding-top: 1.5rem;
 }
 
-.noIndexFooter .noIndexFooter__form .footerForm__button:hover {
-  background-color: #000311;
+.noIndexFooter img {
+  width: 2.5rem;
+}
+
+.noIndexFooter .form-control {
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.noIndexFooter .form-control:focus {
+  border-color: #80a0b1;
+  -webkit-box-shadow: 2px 2px 2px 2px 3px #80a0b1;
+          box-shadow: 2px 2px 2px 2px 3px #80a0b1;
+}
+
+.noIndexFooter .btn-outline-secondary {
+  border-color: #b2dee5;
+  color: #b2dee5;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.noIndexFooter .btn-outline-secondary:hover {
+  background: #b2dee5;
+  color: #171934;
 }
 
 /*NO INDEX NAV***/
 .nav {
   background-color: #fff;
+}
+
+.nav .logo {
+  width: 6em;
 }
 
 .nav .nav__item a {
@@ -308,7 +330,7 @@ body {
 }
 
 .sobreNosotrosImg img {
-  width: 200px;
+  width: 160px;
   margin: auto;
   border: 0.5px solid #171934;
 }
@@ -352,6 +374,14 @@ body {
   }
   body .nav__item a {
     font-size: 1.5em;
+  }
+  /*no index footer***/
+  .noIndexFooter img {
+    width: 3rem;
+  }
+  /*SOBRE NOSOTROS***/
+  .sobreNosotrosImg img {
+    width: 180px;
   }
 }
 
@@ -437,6 +467,10 @@ body {
   }
   .articleDos .articuloServicios {
     border: 0;
+  }
+  /*SOBRE NOSOTROS***/
+  .sobreNosotrosImg img {
+    width: 200px;
   }
 }
 
