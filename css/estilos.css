@@ -176,16 +176,24 @@ body {
 
 .contactMain .formConsultas__input {
   border: 1px solid #80a0b1;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.contactMain .formConsultas__input:focus {
+  border-color: #80a0b1;
+  -webkit-box-shadow: 2px 2px 2px 2px 3px #80a0b1;
+          box-shadow: 2px 2px 2px 2px 3px #80a0b1;
 }
 
 .contactMain .infoContacto__item {
   list-style-type: none;
-  font-size: 1.5em;
-  padding: 1rem;
+  font-size: 1.3em;
+  padding: .5rem;
 }
 
 .contactMain .infoContacto__item--horarios {
-  font-size: 1em;
+  font-size: .9em;
   padding-top: 2rem;
 }
 
@@ -290,6 +298,18 @@ body {
   font-size: 15px;
 }
 
+.formReservas .form-control {
+  border: 1px solid #80a0b1;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.formReservas .form-control:focus {
+  border-color: #80a0b1;
+  -webkit-box-shadow: 2px 2px 2px 2px 3px #80a0b1;
+          box-shadow: 2px 2px 2px 2px 3px #80a0b1;
+}
+
 .formReservas .formReservas__button {
   background-color: #171934;
   border: 1px solid #000311;
@@ -307,7 +327,8 @@ body {
 }
 
 .carouselOpiniones .carouselOpiniones__subtitulo {
-  font-size: 1.2em;
+  font-size: 1.5em;
+  font-weight: 600;
 }
 
 .carouselOpiniones .carouselOpiniones__inner {
@@ -454,10 +475,10 @@ body {
     color: #80a0b1;
   }
   /*SERVICIOS***/
-  .carousel {
+  .carouselServicios {
     margin-top: 18vh !important;
   }
-  .carousel .carousel-caption {
+  .carouselServicios .carousel-caption {
     color: #171934;
     background: rgba(178, 222, 229, 0.3);
   }

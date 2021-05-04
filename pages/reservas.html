@@ -59,24 +59,24 @@
 	<main class="container">
 		<div class="row">
 		
-		<form class="formReservas col-lg-6">
-			<p class="formReservas__titulo">Reservas</p>
-			<div class="form-group">
+		<form class="formReservas col-lg-6 pr-lg-3"  method="POST" action="email.php" novalidate >
+			<p class="formReservas__titulo pb-lg-2 pt-lg-3">Reservas</p>
+			<div class="form-group pt-lg-3">
 				<label for="formGroupExampleInput" class="formReservas__label">Nombre y apellido:</label>
-				<input type="text" class="form-control" id="formGroupExampleInput">
+				<input type="text" class="form-control needs-validation"id="formGroupExampleInput">
 			  </div>
 			  <div class="form-group">
 				<label for="formGroupExampleInput" class="formReservas__label">Dirección:</label>
-				<input type="text" class="form-control" id="formGroupExampleInput">
+				<input type="text" class="form-control needs-validation" id="formGroupExampleInput">
 			  </div>
 			  <div class="form-group">
 				<label for="formGroupExampleInput" class="formReservas__label">Ciudad:</label>
-				<input type="text" class="form-control" id="formGroupExampleInput" >
+				<input type="text" class="form-control needs-validation" id="formGroupExampleInput" >
 			  </div>
 			<div class="form-group">
 				<label for="exampleInputEmail1" class="formReservas__label">Email:</label>
-				<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-				<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+				<input type="email" class="form-control needs-validation" id="exampleInputEmail1" aria-describedby="emailHelp">
+				<small id="emailHelp" class="form-text text-muted">No compartiremos su correo con nadie.</small>
 			  </div>
 			  <div class="form-group">
 				<label class="formReservas__label" for="exampleFormControlSelect1">Servicio</label>
@@ -101,47 +101,47 @@
 						  Mañana (8:00-12:00)
 						</label>
 					  </div>
-					  <div class="form-check">
+					  <div class="form-check pt-lg-2">
 						<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
 						<label class="form-check-label formReservas__label " for="exampleRadios2">
 						  Tarde (14:00-19:00)
 						</label>
 				</div>
 				</div>
-			  <button type="submit" class="btn btn-primary formReservas__button">Reservar</button>
+			  <button type="submit" class="btn btn-primary formReservas__button mt-lg-3 mb-lg-5">Reservar</button>
 		</form>
-		<div class="col-6 carouselOpiniones">
-		<p class="carouselOpiniones__subtitulo"> Opiniones de clientes que vivieron la experiencia Meraki: </p>
+		<div class="col-6 carouselOpiniones pl-lg-4">
+		<p class="carouselOpiniones__subtitulo pb-lg-4"> Opiniones de clientes que vivieron la experiencia Meraki: </p>
         <div id="carouselExampleInterval " class="carousel slide " data-ride="carousel">
 			<div class="carousel-inner carouselOpiniones__inner">
 			  <div class="carousel-item active" data-interval="10000">
 				<div class="card">
 					<div class="card-body">
 					  <blockquote class="blockquote mb-0">
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-						<footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+						<p>Excelente servicio y atención, como siempre. Nunca dejo de recomendarlo.</p>
+						<footer class="blockquote-footer">Homero, 50 años.</footer>
 					  </blockquote>
 					</div>
 				  </div>
 			  </div>
-			  <div class="carousel-item" data-interval="2000">
+			  <div class="carousel-item" data-interval="10000">
 				<div class="card">
 					
 					<div class="card-body">
 					  <blockquote class="blockquote mb-0">
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-						<footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+						<p>Una experiencia inolvidable, difícil de describir. Distinto y muy superior a cualquier spa al que haya ido jamás.</p>
+						<footer class="blockquote-footer">Mirta, 63 años.</footer>
 					  </blockquote>
 					</div>
 				  </div>
 			  </div>
-			  <div class="carousel-item">
+			  <div class="carousel-item" data-interval="10000">
 				<div class="card">
 					
 					<div class="card-body">
 					  <blockquote class="blockquote mb-0">
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-						<footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+						<p>Vine porque me lo recomendó una amiga, jamás creí poder encontrar un lugar donde desconectarme completamente del stress de mi trabajo y mi vida personal. Es mejor que ir a terapia!</p>
+						<footer class="blockquote-footer">Eva, 33 años.</footer>
 					  </blockquote>
 					</div>
 				  </div>

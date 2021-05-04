@@ -136,15 +136,20 @@ body {
     }
     .formConsultas__input {
         border: 1px solid $primario;
+        transition: .5s;
+        &:focus {
+         border-color: $primario;
+         box-shadow: 2px 2px 2px 2px 3px $primario;
+        }
     }
     .infoContacto__item {
         list-style-type: none;
-        font-size: 1.5em;
-        padding: 1rem;
+        font-size: 1.3em;
+        padding: .5rem;
     }
     
     .infoContacto__item--horarios {
-        font-size: 1em;
+        font-size: .9em;
         padding-top: 2rem;
     }
     textarea.form-control {
@@ -245,6 +250,14 @@ body {
     .formReservas__label {
         font-size: 15px;
     }
+    .form-control {
+    border: 1px solid $primario;
+    transition: .5s;
+    &:focus {
+     border-color: $primario;
+     box-shadow: 2px 2px 2px 2px 3px $primario;
+    }
+}
     .formReservas__button {
         background-color: $secundario;
         border: 1px solid $texto;
@@ -260,9 +273,12 @@ body {
 
 .carouselOpiniones {
     margin-top: 20vh;
+
     .carouselOpiniones__subtitulo {
-        font-size: 1.2em;
+        font-size: 1.5em;
+        font-weight: $font-bold;
     }
+
     .carouselOpiniones__inner {
         width: 100%;
         border: 0.5px solid $secundario;
