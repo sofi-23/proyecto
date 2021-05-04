@@ -6,7 +6,9 @@ body {
     color: $texto;
    
 }
+
 /*INDEX****/
+
 .fondoIndex {
   background-image: url(../images/fondo1.jpg);
   background-position: center;
@@ -65,6 +67,7 @@ body {
     }
 }
 }
+
 /*SERVICIOS****/
 
 
@@ -97,11 +100,7 @@ body {
 }
 }
 }
-/*.articuloServicios.fondoGris {
-         background: #eeeeee;
-        }
 
-    }*/
 #masajes, #meditacion, #circuito {
 	background-color: #eeeeee;
 }
@@ -143,6 +142,9 @@ body {
     .infoContacto__item--horarios {
         font-size: 1em;
         padding-top: 2rem;
+    }
+    textarea.form-control {
+        resize: none;
     }
     }
 
@@ -187,9 +189,15 @@ body {
         }
         
         .noIndexSubmenu {
-            background: $texto-secundario;
-            font-size: 1em;
-           
+            background: rgba(128, 160, 177, 0.9);
+            .dropdown-item{
+                transition: 0.5s;
+                font-size: 1em;
+                &:hover {
+                    background: $primario;
+                    color: $secundario;
+                }
+            }
         }
 
     }

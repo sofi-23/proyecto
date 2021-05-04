@@ -21,7 +21,7 @@
         }
     }
     .indexFooter {
-        margin-top: 6rem;
+        margin-top: 5rem;
         img {
             width: 4.5rem;
             height: 4.5rem;
@@ -64,6 +64,7 @@
             
             .submenu {
                 .dropdown-item{
+                    transition: 0.5s;
                     &:hover {
                         background: $primario;
                         color: $secundario;
@@ -72,6 +73,7 @@
             }
             .indexNav__item { 
                 a{
+                font-size: 1.1em;
                 color: $secundario;
                 transition: .5s;
                
@@ -83,14 +85,24 @@
             }
                
             }
+            .indexMain {
+            .indexMain__titulo {
+                font-size: 2.7em !important;
+            }
+            .indexMain__boton {
+                width: 8rem;
+                height: 3.1rem;
+                margin-top: 5rem;
+            }
+        }
         }
     }
     .indexFooter {
-        margin-top: 3rem;
+        margin-top: 5rem;
         img {
-            width: 4rem;
-            height: 4rem;
-            margin-bottom: 2rem;
+            width: 3rem;
+            height: 3rem;
+            margin-bottom: 1rem;
         }
         }
     
@@ -112,12 +124,14 @@
     }
 .nav__item {
     .nav-link {
-        font-size: 1em;
+        font-size: 1.1em;
         &:hover {
             color: $primario;
         }
     }
+
 }
+
 }
 /*SERVICIOS***/
 .carousel {
@@ -146,5 +160,18 @@
     .articuloServicios {
     border: 0.05px solid $secundario;
     box-shadow: 0.5px .5px 1px $texto;
+}
+}
+
+/*Arreglando problema del background nav***/
+@media (min-width: 990px) {
+    .indexNav {
+        .navbar-nav {
+            background: none;
+            .nav-link {
+                color: $secundario;
+            }
+        }
+
 }
 }
