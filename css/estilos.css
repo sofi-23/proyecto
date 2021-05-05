@@ -179,7 +179,7 @@ body {
   .nav .nav__button {
     text-align: center;
     display: block;
-    font-size: 1.4em;
+    font-size: 1.2em;
     background: #171934;
     width: 180px;
     margin: auto;
@@ -305,7 +305,7 @@ body {
     padding: .3rem;
     background: rgba(0, 0, 0, 0);
     color: #171934;
-    font-size: 1.3em;
+    font-size: 1.2em;
     transition: .5s; }
     .noIndexNav .nav__button:hover {
       background-color: #171934;
