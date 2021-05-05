@@ -187,7 +187,7 @@ body {
 
 /*RESERVAS***/
 .formReservas {
-  margin-top: 17vh; }
+  margin-top: 10vh; }
   .formReservas .formReservas__titulo {
     font-size: 2em;
     font-weight: 600; }
@@ -207,14 +207,15 @@ body {
     .formReservas .formReservas__button:hover {
       background-color: #000311; }
 
-.carouselOpiniones {
-  margin-top: 20vh; }
-  .carouselOpiniones .carouselOpiniones__subtitulo {
-    font-size: 1.5em;
-    font-weight: 600; }
-  .carouselOpiniones .carouselOpiniones__inner {
-    width: 100%;
-    border: 0.5px solid #171934; }
+.carouselOpiniones .carouselOpiniones__subtitulo {
+  font-size: 1.5em;
+  font-weight: 600; }
+
+.carouselOpiniones .carouselOpiniones__inner {
+  width: 100%;
+  border: 0.5px solid #171934; }
+  .carouselOpiniones .carouselOpiniones__inner .blockquote {
+    color: #171934; }
 
 /*GALERIA***/
 .tituloGaleria {
@@ -230,15 +231,21 @@ body {
 
 .sobreNosotrosImg img {
   width: 160px;
+  height: 200px;
   margin: auto;
   border: 0.5px solid #171934; }
 
 /*TABLET***/
-@media (min-width: 768px) {
+@media (min-width: 767px) {
   body {
     font-size: 20px;
     /*index***/
     /*nav no index***/ }
+    body main {
+      min-height: 75vh;
+      max-width: 100vw; }
+    body footer {
+      min-height: 25vh; }
     body .fondoIndex .logo {
       width: 9rem; }
     body .fondoIndex .hamburguesa {
@@ -264,11 +271,15 @@ body {
   .noIndexFooter img {
     width: 3rem; }
   /*SOBRE NOSOTROS***/
-  .sobreNosotrosImg img {
-    width: 180px; } }
+  .sobreNosotrosImg {
+    /*RESERVAS***/ }
+    .sobreNosotrosImg img {
+      width: 180px; }
+    .sobreNosotrosImg .formReservas {
+      margin-top: 10vh; } }
 
 /*DESKTOP***/
-@media (min-width: 1100px) {
+@media (min-width: 991px) {
   /*index***/
   body {
     font-size: 16px; }
@@ -299,6 +310,11 @@ body {
       width: 3rem;
       height: 3rem;
       margin-bottom: 1rem; }
+  /*RESERVAS***/
+  .formReservas {
+    margin-top: 17vh; }
+  .carouselOpiniones {
+    margin-top: 20vh; }
   /*no index nav***/
   .noIndexNav .nav__button {
     border: 1.5px solid #171934;
@@ -334,7 +350,13 @@ body {
   /*SERVICIOS***/
   .articuloServicios {
     border: 0.05px solid #171934;
-    box-shadow: 0.5px 0.5px 1px #000311; } }
+    box-shadow: 0.5px 0.5px 1px #000311; }
+  /*SOBRE NOSOTROS***/
+  .sobreNosotrosImg img {
+    width: 65%;
+    height: auto;
+    margin: auto;
+    display: block; } }
 
 /*Arreglando problema del background nav***/
 @media (min-width: 990px) {

@@ -241,8 +241,7 @@ body {
 /*RESERVAS***/
 
 .formReservas {
-    margin-top: 17vh;
-    
+    margin-top: 10vh;
     .formReservas__titulo {
         font-size: 2em;
         font-weight: $font-bold;
@@ -273,7 +272,7 @@ body {
 }
 
 .carouselOpiniones {
-    margin-top: 20vh;
+   
 
     .carouselOpiniones__subtitulo {
         font-size: 1.5em;
@@ -283,7 +282,14 @@ body {
     .carouselOpiniones__inner {
         width: 100%;
         border: 0.5px solid $secundario;
-    }
+        
+        .blockquote {
+            color: $secundario;
+            
+        }
+     
+    
+}
     
     
 }
@@ -308,6 +314,7 @@ body {
 .sobreNosotrosImg {
     img {
         width: 160px;
+        height: 200px;
         margin: auto;
         border: 0.5px solid $secundario;
     }
