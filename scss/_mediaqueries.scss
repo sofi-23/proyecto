@@ -5,7 +5,7 @@
     font-size: 20px; 
     /*index***/
     .fondoIndex {
-        height: 100vh;
+  
         .logo {
             width: 9rem;
         }
@@ -69,7 +69,7 @@
     body {
        font-size: 16px;
        .fondoIndex {
-           height: 100%;
+          
      
      .indexNav {
             margin-right: 1.5rem;
@@ -124,6 +124,7 @@
 
 
 /*no index nav***/
+
 .noIndexNav{
     .nav__button {
         border: 1.5px solid $secundario;
@@ -151,6 +152,7 @@
 
 
 /*SERVICIOS***/
+
 .carouselServicios {
     margin-top: 18vh !important;
     .carousel-caption {
