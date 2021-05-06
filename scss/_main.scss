@@ -75,39 +75,55 @@ body {
 
 /*SERVICIOS****/
 
+.serviciosMain {
 
-.carouselServicios {
-	width: 80vw;
-	margin: auto;
-	margin-top: 15vh;
-    margin-bottom: 3rem;
-    .carousel__img {
-        margin: auto;
+    min-height: 0;
+    .carouselServicios {
 
+	    width: 80vw;
+	    margin: auto;
+	    margin-top: 15vh;
+        margin-bottom: 3rem;
+        .carousel-caption {
+
+            color: $secundario;
+            background: rgba($color: $texto-secundario, $alpha: 0.3);
+            }
+        .carousel__img {
+
+            margin: auto;
+        }
+    }
+}
+.articleDos {
+#masajes, #faciales, #meditacion, #manicuria, #circuito {
+
+    h3 {
+        font-size: 2em;
+        margin-top: 2rem;
+        background-color: $primario;
+    }
+    
+
+
+    .articuloServicios {
+        background: rgba($color: $secundario, $alpha: .1);
+        margin-top: 1rem;
+        padding: .3rem;
+
+        .textoServicios {
+            padding: 1rem;
+            display: flex;
+            align-items: center;
+        }
+        
+        .imgServicios{
+            margin: auto ; 
+            display: block; 
+        }
     }
 }
 
-#masajes, #faciales, #meditacion, #manicuria, #circuito {
-    .articuloServicios {
-     background: rgba($color: $secundario, $alpha: .1);
-     margin-top: 1rem;
-     padding: .3rem;
-     
-    
-    h3 {
-    margin-top: 4rem;
-    margin-bottom: 1rem;
-    font-weight: $font-bold;
-    font-size: 3em;
- }
-    img{
-    margin-top: 1rem ;
-}
-}
-}
-
-#masajes, #meditacion, #circuito {
-	background-color: #eeeeee;
 }
 
 /*CONTACTO***/

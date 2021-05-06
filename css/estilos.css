@@ -76,28 +76,43 @@ body {
       height: 3.5rem; }
 
 /*SERVICIOS****/
-.carouselServicios {
-  width: 80vw;
-  margin: auto;
-  margin-top: 15vh;
-  margin-bottom: 3rem; }
-  .carouselServicios .carousel__img {
-    margin: auto; }
+.serviciosMain {
+  min-height: 0; }
+  .serviciosMain .carouselServicios {
+    width: 80vw;
+    margin: auto;
+    margin-top: 15vh;
+    margin-bottom: 3rem; }
+    .serviciosMain .carouselServicios .carousel-caption {
+      color: #171934;
+      background: rgba(178, 222, 229, 0.3); }
+    .serviciosMain .carouselServicios .carousel__img {
+      margin: auto; }
 
-#masajes .articuloServicios, #faciales .articuloServicios, #meditacion .articuloServicios, #manicuria .articuloServicios, #circuito .articuloServicios {
+.articleDos #masajes h3, .articleDos #faciales h3, .articleDos #meditacion h3, .articleDos #manicuria h3, .articleDos #circuito h3 {
+  font-size: 2em;
+  margin-top: 2rem;
+  background-color: #80a0b1; }
+
+.articleDos #masajes .articuloServicios, .articleDos #faciales .articuloServicios, .articleDos #meditacion .articuloServicios, .articleDos #manicuria .articuloServicios, .articleDos #circuito .articuloServicios {
   background: rgba(23, 25, 52, 0.1);
   margin-top: 1rem;
   padding: .3rem; }
-  #masajes .articuloServicios h3, #faciales .articuloServicios h3, #meditacion .articuloServicios h3, #manicuria .articuloServicios h3, #circuito .articuloServicios h3 {
-    margin-top: 4rem;
-    margin-bottom: 1rem;
-    font-weight: 600;
-    font-size: 3em; }
-  #masajes .articuloServicios img, #faciales .articuloServicios img, #meditacion .articuloServicios img, #manicuria .articuloServicios img, #circuito .articuloServicios img {
-    margin-top: 1rem; }
-
-#masajes, #meditacion, #circuito {
-  background-color: #eeeeee; }
+  .articleDos #masajes .articuloServicios .textoServicios, .articleDos #faciales .articuloServicios .textoServicios, .articleDos #meditacion .articuloServicios .textoServicios, .articleDos #manicuria .articuloServicios .textoServicios, .articleDos #circuito .articuloServicios .textoServicios {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    /*h3 {
+                margin-top: 4rem;
+                margin-bottom: 1rem;
+                font-weight: $font-bold;
+                font-size: 3em;
+                background-color: $primario;
+                
+            }*/ }
+  .articleDos #masajes .articuloServicios .imgServicios, .articleDos #faciales .articuloServicios .imgServicios, .articleDos #meditacion .articuloServicios .imgServicios, .articleDos #manicuria .articuloServicios .imgServicios, .articleDos #circuito .articuloServicios .imgServicios {
+    margin: auto;
+    display: block; }
 
 /*CONTACTO***/
 .contactMain {
@@ -251,13 +266,15 @@ body {
     body .fondoIndex .hamburguesa {
       width: 30px; }
     body .fondoIndex .indexMain {
-      margin-top: 15vh; }
+      margin-top: 15vh;
+      min-height: 0; }
       body .fondoIndex .indexMain .indexMain__boton {
         width: 10rem;
         height: 3.5rem;
         margin-top: 5rem; }
     body .fondoIndex .indexFooter {
-      margin-top: 5rem; }
+      margin-top: 5rem;
+      min-height: 0; }
       body .fondoIndex .indexFooter img {
         width: 4.5rem;
         height: 4.5rem; }
@@ -282,7 +299,11 @@ body {
 @media (min-width: 991px) {
   /*index***/
   body {
-    font-size: 16px; }
+    font-size: 16px;
+    /*RESERVAS***/
+    /*no index nav***/
+    /*SERVICIOS***/
+    /*SOBRE NOSOTROS***/ }
     body .fondoIndex .indexNav {
       margin-right: 1.5rem; }
       body .fondoIndex .indexNav .navbar-nav {
@@ -304,53 +325,44 @@ body {
       width: 8rem;
       height: 3.1rem;
       margin-top: 5rem; }
-  .indexFooter {
-    margin-top: 5rem; }
-    .indexFooter img {
-      width: 3rem;
-      height: 3rem;
-      margin-bottom: 1rem; }
-  /*RESERVAS***/
-  .formReservas {
-    margin-top: 17vh; }
-  .carouselOpiniones {
-    margin-top: 20vh; }
-  /*no index nav***/
-  .noIndexNav .nav__button {
-    border: 1.5px solid #171934;
-    padding: .3rem;
-    background: rgba(0, 0, 0, 0);
-    color: #171934;
-    font-size: 1.2em;
-    transition: .5s; }
-    .noIndexNav .nav__button:hover {
-      background-color: #171934;
-      color: #b2dee5; }
-  .noIndexNav .nav__item .nav-link {
-    font-size: 1.1em; }
-    .noIndexNav .nav__item .nav-link:hover {
-      color: #80a0b1; }
-  /*SERVICIOS***/
-  .carouselServicios {
-    margin-top: 18vh !important; }
-    .carouselServicios .carousel-caption {
+    body .indexFooter {
+      margin-top: 0 !important; }
+      body .indexFooter img {
+        width: 3rem;
+        height: 3rem;
+        margin-bottom: 1rem; }
+    body .formReservas {
+      margin-top: 17vh; }
+    body .carouselOpiniones {
+      margin-top: 20vh; }
+    body .noIndexNav .nav__button {
+      border: 1.5px solid #171934;
+      padding: .3rem;
+      background: rgba(0, 0, 0, 0);
       color: #171934;
-      background: rgba(178, 222, 229, 0.3); }
-  .articleDos h3 {
-    margin-top: 2rem;
-    padding-top: 1rem; }
-  .articleDos .articuloServicios {
-    border: 0; }
-  /*SOBRE NOSOTROS***/
-  .sobreNosotrosImg img {
-    width: 200px; } }
+      font-size: 1.2em;
+      transition: .5s; }
+      body .noIndexNav .nav__button:hover {
+        background-color: #171934;
+        color: #b2dee5; }
+    body .noIndexNav .nav__item .nav-link {
+      font-size: 1.1em; }
+      body .noIndexNav .nav__item .nav-link:hover {
+        color: #80a0b1; }
+    body .carouselServicios {
+      margin-top: 18vh !important; }
+      body .carouselServicios .carousel-caption {
+        color: #171934;
+        background: rgba(178, 222, 229, 0.3); }
+    body .articleDos h3 {
+      font-size: 3em;
+      margin-top: 3rem;
+      background-color: #80a0b1; }
+    body .sobreNosotrosImg img {
+      width: 200px; } }
 
 /*MOBILE***/
 @media (max-width: 768px) {
-  /*SERVICIOS***/
-  .articuloServicios {
-    border: 0.05px solid #171934;
-    box-shadow: 0.5px 0.5px 1px #000311; }
   /*SOBRE NOSOTROS***/
   .sobreNosotrosImg img {
     width: 65%;
