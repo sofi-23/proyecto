@@ -1,232 +1,243 @@
 /*TABLET***/
 
 @media (min-width: 767px) {
-    body {
-    font-size: 20px; 
-    main {
-        min-height: 75vh;
-        max-width: 100vw;
+			body {
+			    font-size: 20px; 
+						main {
+								min-height: 75vh;
+								max-width: 100vw;
+						}
+						footer {
+								min-height: 25vh;
+						}
 
-    }
-    footer {
-        min-height: 25vh;
-    }
-    /*index***/
-    .fondoIndex {
-  
-        .logo {
-            width: 9rem;
-        }
-        .hamburguesa {
-            width: 30px;
-        }
-    .indexMain {
-        margin-top: 15vh;
-        min-height: 0;
-        .indexMain__boton {
-            width: 10rem;
-            height: 3.5rem;
-            margin-top: 5rem;
-        }
-    }
-    .indexFooter {
-        margin-top: 5rem;
-        min-height: 0;
-        img {
-            width: 4.5rem;
-            height: 4.5rem;
-        }
-    }
-}
+    /*INDEX***/
 
-   /*nav no index***/
+			.fondoIndex {
+						.logo {
+								width: 9rem;
+						}
+						.hamburguesa {
+								width: 30px;
+						}
+						.indexMain {
+								margin-top: 15vh;
+								min-height: 0;
+									.indexMain__boton {
+											width: 10rem;
+											height: 3.5rem;
+											margin-top: 5rem;
+									}
+						}
+						.indexFooter {
+								margin-top: 5rem;
+								min-height: 0;
+									img {
+											width: 4.5rem;
+											height: 4.5rem;
+									}
+						}
+		}
 
-    .logo {
-    width: 9rem;
-  }
-    .hamburguesa {
-    width: 30px;
-}
-.nav__item {
-    a {
-        font-size: 1.5em;
-    }
+/*NO INDEX NAV***/
 
-}
+			.nav {
+						.logo {
+								width: 11rem;
+						}
+						.hamburguesa {
+								width: 30px;
+						}
+						.nav__item {
+									a {
+											font-size: 1.5em;
+									}
+						}
+			}
 
-}
-/*no index footer***/
+	/*NO INDEX FOOTER***/
 
-.noIndexFooter {
-    img {
-        width: 3rem;
-    }
-}
+			.noIndexFooter {
+						img {
+								width: 3rem;
+						}
+			}
 
-/*SOBRE NOSOTROS***/
-.sobreNosotrosImg {
-    img {
-        width: 180px;
-    }
+	/*SOBRE NOSOTROS***/
 
-/*RESERVAS***/
-.formReservas {
-    margin-top: 10vh;
-}
-}
-
-}
-
+			.sobreNosotrosImg {
+						img {
+								width: 180px;
+						}
+			}
+	/*RESERVAS***/
+	
+			.formReservas {
+					margin-top: 10vh;
+			}
+	/*CONTACTO***/
+	    .contactMain {
+					margin-top: 12vh;
+			}
+			
+		}
+}	
 
 /*DESKTOP***/
 
 @media (min-width:991px) {
-/*index***/
-    body {
-       font-size: 16px;
-       .fondoIndex {
-          
-     
-     .indexNav {
-            margin-right: 1.5rem;
-        .navbar-nav {
-            background: none;
-        }
-            
-            .submenu {
-                .dropdown-item{
-                    transition: 0.5s;
-                    &:hover {
-                        background: $primario;
-                        color: $secundario;
-                    }
-                }
+	/*INDEX***/
+			body {
+    	 	  font-size: 16px;
+       			.fondoIndex {
+     							.indexNav {
+            					margin-right: 1.5rem;
+        					.navbar-nav {
+            					background: none;
+       						}            
+            			.submenu {
+                				.dropdown-item{
+                    				transition: 0.5s;
+                    				&:hover {
+                        				background: $primario;
+                        				color: $secundario;
+                    				}
+                				}
+            			}
+            			.indexNav__item { 
+                				a{
+                						font-size: 1.1em;
+														color: $secundario;
+														transition: .5s;				
+														&:hover {
+																color: $primario;
+																}
+														}
+            			}
             }
-            .indexNav__item { 
-                a{
-                font-size: 1.1em;
-                color: $secundario;
-                transition: .5s;
-               
-                &:hover {
-                    color: $primario;
-                    }
-                }
-             
-            }
-               
-            }
-            .indexMain {
-            .indexMain__titulo {
-                font-size: 2.7em !important;
-            }
-            .indexMain__boton {
-                width: 8rem;
-                height: 3.1rem;
-                margin-top: 5rem;
-            }
+							.indexMain {
+										.indexMain__titulo {
+												font-size: 2.7em !important;
+										}
+										.indexMain__boton {
+                				width: 8rem;
+												height: 3.1rem;
+												margin-top: 5rem;
+										}
+        			}
         }
-        }
-   
-    .indexFooter {
-        margin-top: 0 !important;
-        img {
-            width: 3rem;
-            height: 3rem;
-            margin-bottom: 1rem;
-        }
-        }
-     
-        /*RESERVAS***/
+							.indexFooter {
+									margin-top: 0 !important;
+										img {
+												width: 3rem;
+												height: 3rem;
+												margin-bottom: 1rem;
+										}
+									}
 
-    .formReservas {
-            margin-top: 17vh;
-    
-        }
-    .carouselOpiniones {
-        margin-top: 20vh;
-}
-/*no index nav***/
+/*RESERVAS***/
 
-.noIndexNav{
-    .nav__button {
-        border: 1.5px solid $secundario;
-        padding: .3rem;
-        background: rgba($color: #000000, $alpha: 0);
-        color: $secundario;
-        font-size: 1.2em;
-        transition: .5s;
-    &:hover {
-        background-color: $secundario;
-        color: $texto-secundario;
-    }
-    }
-.nav__item {
-    .nav-link {
-        font-size: 1.1em;
-        &:hover {
-            color: $primario;
-        }
-    }
+	    .formReservas {
+          margin-top: 17vh;    
+      }
+			.carouselOpiniones {
+					margin-top: 20vh;
+			}
 
-}
+/*NO INDEX NAV***/
 
-}
+			.noIndexNav{
+				    box-shadow: 1px 0.2px 4px #171934;
+				    .logo {
+						width: 9rem;
+					}
+    				.nav__button {
+        				border: 1.5px solid $secundario;
+								padding: .3rem;
+								background: rgba($color: #000000, $alpha: 0);
+								color: $secundario;
+								font-size: 1.2em;
+								transition: .5s;
+								&:hover {
+										background-color: $secundario;
+										color: $texto-secundario;
+								}
+						}
+						.nav__item {
+									.nav-link {
+											font-size: 1.1em;
+											&:hover {
+													color: $primario;
+											}
+									}
+						}
+			}
 
 
 /*SERVICIOS***/
 
-.carouselServicios {
-    margin-top: 18vh !important;
-    .carousel-caption {
-    
-    color: $secundario;
-    background: rgba($color: $texto-secundario, $alpha: 0.3);
-    }
-}
-.articleDos {
-    h3 {
-        font-size: 3em;
-        margin-top: 3rem;
-        background-color: $primario;
-    }
-    
-}
+			.carouselServicios {
+					margin-top: 18vh !important;
+					width: 90vw;
+					.carousel-caption {					
+							color: $secundario;
+							background: rgba($color: $texto-secundario, $alpha: 0.3);
+					}
+			}
+			.articleDos {
+						h3 {
+								font-size: 3em;
+								margin-top: 3rem;
+								background-color: $primario;
+						}		
+			}
 
 /*SOBRE NOSOTROS***/
-.sobreNosotrosImg {
-    img {
-        width: 200px;
-    }
-}
-}
-}  
+
+			.sobreNosotrosImg {
+						img {
+								width: 200px;
+						}
+			}
+
+/*CONTACTO***/
+			.contactMain {
+					margin-top: 20vh;
+			}
+	}
+} 
+
 /*MOBILE***/
 
 @media (max-width: 768px) {
     
 /*SOBRE NOSOTROS***/
-.sobreNosotrosImg { 
-    img{
-    width: 65%;
-    height: auto;
-    margin: auto;
-    display:block;
-    
-}
-}
+			.sobreNosotrosImg { 
+						img {
+						width: 65%;
+						height: auto;
+						margin: auto;
+						display:block;
+						
+						}
+			}
+/*SERVICIOS***/
+
+      .serviciosMain {
+      			.carouselServicios {
+				  			width:90vw;
+						}
+			}
 }
 /*Arreglando problema del background nav***/
+/*
 @media (min-width: 990px) {
-    .indexNav {
-        .navbar-nav {
-            background: none;
-            .nav-link {
-                color: $secundario;
-            }
-        }
-
-}
-
-
-}
+			.indexNav {
+						.navbar-nav {
+								background: none;
+									.nav-link {
+											color: $secundario;
+									}
+						}
+			}
+}*/

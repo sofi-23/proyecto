@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+
 	<title>Reservas</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
@@ -10,187 +11,189 @@
 	<link  rel="icon"   href="../images/logobegrochico.png" type="image/png" />
 	<link rel="stylesheet" href="../css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <link rel="stylesheet" type="text/css" href="../css/estilos.css">
+  <link rel="stylesheet" type="text/css" href="../css/estilos.css">
 </head>
+
 <body>
+
 	<header>
 		<nav class="nav navbar navbar-expand-lg fixed-top w-100 noIndexNav">
-	  <a class="navbar-brand" href="../index.html">
-		<img src="../images/logonegro.png" width="65" height="" alt="40" loading="lazy" class="logo">
-	  </a>
-	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-		<img src="../images/hamburguesa.png" class="hamburguesa" width="20px">
-	  </button>
-	
-	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-		<ul class="navbar-nav mr-auto justify-content-end w-100 mr-lg-3">
-		  <li class="nav-item nav__item">
-			<a class="nav-link" href="../index.html">Home </a>
-		  </li>
-		  <li class="nav-item nav__item nav__item--dropdown dropdown">
-			<a class="nav-link dropdown-toggle" href="servicios.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-			  Servicios<span class="sr-only">(current)</span>
-			</a>
-			<div class="dropdown-menu noIndexSubmenu" aria-labelledby="navbarDropdown">
-			  
-			  <a class="dropdown-item" href="servicios.html">Explorar servicios</a>
-		   <div class="dropdown-divider"></div>
-		   <a class="dropdown-item" href="servicios.html#masajes">Masajes</a>
-		   <a class="dropdown-item" href="servicios.html#meditacion">Meditación</a>
-		   <a class="dropdown-item" href="servicios.html#faciales">Faciales</a>
-		   <a class="dropdown-item" href="servicios.html#manicuria">Belleza de manos y pies</a>
-		   <a class="dropdown-item" href="servicios.html#circuito">Circuito</a>
-			   </div>
-		  </li>
-		  <li class="nav-item nav__item">
-			<a class="nav-link" href="galeria.html">Galería</a>
-		  </li>
-		   <li class="nav-item nav__item">
-			<a class="nav-link" href="sobrenosotros.html">Sobre Nosotros</a>
-		  </li>
-		   <li class="nav-item nav__item">
-			<a class="nav-link" href="contacto.html">Contacto</a>
-		  </li>
-		  
-		</ul>
-		<a class="btn btn-bd-download nav__button" href="reservas.html">Reservas</a>
-	  </div>
-	</nav>
+		  <a class="navbar-brand" href="../index.html">
+				<img src="../images/logonegro.png" width="65" height="" alt="40" loading="lazy" class="logo">
+	  	</a>
+	  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<img src="../images/hamburguesa.png" class="hamburguesa" width="20px">
+	  	</button>
+	  	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto justify-content-end w-100 mr-lg-3">
+		  		<li class="nav-item nav__item">
+						<a class="nav-link" href="../index.html">Home </a>
+		  		</li>
+		  		<li class="nav-item nav__item nav__item--dropdown dropdown">
+						<a class="nav-link dropdown-toggle" href="servicios.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			  			Servicios<span class="sr-only">(current)</span>
+						</a>
+						<div class="dropdown-menu noIndexSubmenu" aria-labelledby="navbarDropdown">			  
+			  			<a class="dropdown-item" href="servicios.html">Explorar servicios</a>
+		   				<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="servicios.html#masajes">Masajes</a>
+								<a class="dropdown-item" href="servicios.html#meditacion">Meditación</a>
+								<a class="dropdown-item" href="servicios.html#faciales">Faciales</a>
+								<a class="dropdown-item" href="servicios.html#manicuria">Belleza de manos y pies</a>
+								<a class="dropdown-item" href="servicios.html#circuito">Circuito</a>
+			   		</div>
+		  		</li>
+		  		<li class="nav-item nav__item">
+						<a class="nav-link" href="galeria.html">Galería</a>
+		  		</li>
+		   		<li class="nav-item nav__item">
+						<a class="nav-link" href="sobrenosotros.html">Sobre Nosotros</a>
+		  		</li>
+		   		<li class="nav-item nav__item">
+						<a class="nav-link" href="contacto.html">Contacto</a>
+		  		</li> 
+				</ul>
+				<a class="btn btn-bd-download nav__button" href="reservas.html">Reservas</a>
+	  	</div>
+		</nav>
 	</header>
-	<main class="container">
-		<div class="row">
-		
-		<form class="formReservas col-sm-12 col-md-12 col-lg-6 pr-lg-3x"  method="POST" action="email.php" novalidate >
+
+<!--FORMULARIO RESERVAS-->
+	
+<main class="container">
+		<div class="row">		
+			<form class="formReservas col-sm-12 col-md-12 col-lg-6 pr-lg-3x"  method="POST" action="email.php" novalidate >
 			<p class="formReservas__titulo  pb-lg-2 pt-lg-3 pt-4 pt-md-1">Reservas</p>
-			<div class="form-group pt-lg-3">
-				<label for="formGroupExampleInput" class="formReservas__label">Nombre y apellido:</label>
-				<input type="text" class="form-control needs-validation"id="formGroupExampleInput">
+				<div class="form-group pt-lg-3">
+					<label for="formGroupExampleInput" class="formReservas__label">Nombre y apellido:</label>
+					<input type="text" class="form-control needs-validation"id="formGroupExampleInput">
 			  </div>
 			  <div class="form-group">
-				<label for="formGroupExampleInput" class="formReservas__label">Dirección:</label>
-				<input type="text" class="form-control needs-validation" id="formGroupExampleInput">
+					<label for="formGroupExampleInput" class="formReservas__label">Dirección:</label>
+					<input type="text" class="form-control needs-validation" id="formGroupExampleInput">
 			  </div>
 			  <div class="form-group">
-				<label for="formGroupExampleInput" class="formReservas__label">Ciudad:</label>
-				<input type="text" class="form-control needs-validation" id="formGroupExampleInput" >
+					<label for="formGroupExampleInput" class="formReservas__label">Ciudad:</label>
+					<input type="text" class="form-control needs-validation" id="formGroupExampleInput" >
 			  </div>
-			<div class="form-group">
-				<label for="exampleInputEmail1" class="formReservas__label">Email:</label>
-				<input type="email" class="form-control needs-validation" id="exampleInputEmail1" aria-describedby="emailHelp">
-				<small id="emailHelp" class="form-text text-muted">No compartiremos su correo con nadie.</small>
-			  </div>
-			  <div class="form-group">
-				<label class="formReservas__label" for="exampleFormControlSelect1">Servicio</label>
-				<select class="form-control" id="exampleFormControlSelect1">
-				  <option>Masajes</option>
-				  <option>Tratamientos faciales</option>
-				  <option>Meditacion</option>
-				  <option>Manicuria</option>
-				  <option>Circuito hidrico</option>
-				</select>
+				<div class="form-group">
+					<label for="exampleInputEmail1" class="formReservas__label">Email:</label>
+					<input type="email" class="form-control needs-validation" id="exampleInputEmail1" aria-describedby="emailHelp">
+					<small id="emailHelp" class="form-text text-muted">No compartiremos su correo con nadie.</small>
 			  </div>
 			  <div class="form-group">
-				<label for="fecha" class="formReservas__label--fecha d-block" >Fecha:</label>
-				<input type="date" id="fecha" name="fecha" class="ml-md-1>
+					<label class="formReservas__label" for="exampleFormControlSelect1">Servicio</label>
+					<select class="form-control" id="exampleFormControlSelect1">
+				  	<option>Masajes</option>
+				  	<option>Tratamientos faciales</option>
+				  	<option>Meditacion</option>
+				  	<option>Manicuria</option>
+				  	<option>Circuito hidrico</option>
+					</select>
+			  </div>
+			  <div class="form-group">
+					<label for="fecha" class="formReservas__label--fecha d-block" >Fecha:</label>
+					<input type="date" id="fecha" name="fecha" class="ml-md-1">
 				</div>
 				<div class="form-group">
-					<p class="formReservas__label pt-3 pt-lg-0">Franja horaria:</p>
-					
-				    <div class="form-check">
+					<p class="formReservas__label pt-3 pt-lg-0">Franja horaria:</p>					
+				  <div class="form-check">
 						<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
 						<label class="form-check-label formReservas__label" for="exampleRadios1">
 						  Mañana (8:00-12:00)
 						</label>
-					  </div>
-					  <div class="form-check pt-lg-2">
+				  </div>
+				  <div class="form-check pt-lg-2">
 						<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
 						<label class="form-check-label formReservas__label" for="exampleRadios2">
 						  Tarde (14:00-19:00)
 						</label>
-				</div>
+				  </div>
 				</div>
 			  <button type="submit" class="btn btn-primary formReservas__button mt-lg-3 mb-lg-5">Reservar</button>
-		</form>
-		<div class="col-lg-6 col-sm-12 col-md-12 carouselOpiniones pl-lg-4">
-		<p class="carouselOpiniones__subtitulo pb-lg-4 mt-4 mt-md-5 mt-4"> Opiniones de clientes que vivieron la experiencia Meraki: </p>
-        <div id="carouselExampleInterval " class="carousel slide mt-md-4 mb-5 mb-md-3 mt-4 " data-ride="carousel">
-			<div class="carousel-inner carouselOpiniones__inner">
-			  <div class="carousel-item active" data-interval="10000">
-				<div class="card">
-					<div class="card-body">
-					  <blockquote class="blockquote mb-0">
-						<p>Excelente servicio y atención, como siempre. Nunca dejo de recomendarlo.</p>
-						<footer class="blockquote-footer">Homero, 50 años.</footer>
-					  </blockquote>
-					</div>
-				  </div>
-			  </div>
-			  <div class="carousel-item" data-interval="10000">
-				<div class="card">
-					
-					<div class="card-body">
-					  <blockquote class="blockquote mb-0">
-						<p>Una experiencia inolvidable, difícil de describir. Distinto y muy superior a cualquier spa al que haya ido jamás.</p>
-						<footer class="blockquote-footer">Mirta, 63 años.</footer>
-					  </blockquote>
-					</div>
-				  </div>
-			  </div>
-			  <div class="carousel-item" data-interval="10000">
-				<div class="card">
-					
-					<div class="card-body">
-					  <blockquote class="blockquote mb-0">
-						<p>Vine porque me lo recomendó una amiga, jamás creí poder encontrar un lugar donde desconectarme completamente del stress de mi trabajo y mi vida personal. Es mejor que ir a terapia!</p>
-						<footer class="blockquote-footer">Eva, 33 años.</footer>
-					  </blockquote>
-					</div>
-				  </div>
-			  </div>
-			</div>
-			<a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
-			  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-			  <span class="sr-only">Previous</span>
-			</a>
-			<a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
-			  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-			  <span class="sr-only">Next</span>
-			</a>
-		  </div>
-		</div>
-	</div>
-	
+			</form>
 
+<!--CARRUSEL CON OPINIONES-->
+
+      <div class="col-lg-6 col-sm-12 col-md-12 carouselOpiniones pl-lg-4">
+				<p class="carouselOpiniones__subtitulo pb-lg-4 mt-4 mt-md-5 mt-4"> Opiniones de clientes que vivieron la experiencia Meraki: </p>
+        <div id="carouselExampleInterval " class="carousel slide mt-md-4 mb-5 mb-md-3 mt-4 " data-ride="carousel">
+					<div class="carousel-inner carouselOpiniones__inner">
+			  		<div class="carousel-item active" data-interval="10000">
+							<div class="card">
+								<div class="card-body">
+					  			<blockquote class="blockquote mb-0">
+									<p class="text-center">Excelente servicio y atención, como siempre. Nunca dejo de recomendarlo.</p>
+									<footer class="blockquote-footer text-center">Homero, 50 años.</footer>
+					  			</blockquote>
+								</div>
+				  		</div>
+			  		</div>
+			  		<div class="carousel-item" data-interval="10000">
+							<div class="card">
+								<div class="card-body">
+					  			<blockquote class="blockquote mb-0">
+									<p class="text-center"> Una experiencia inolvidable, difícil de describir. Distinto y muy superior a cualquier spa al que haya ido jamás.</p>
+									<footer class="blockquote-footer text-center">Mirta, 63 años.</footer>
+					  			</blockquote>
+								</div>
+				  		</div>
+			  		</div>
+			  		<div class="carousel-item" data-interval="10000">
+							<div class="card">
+								<div class="card-body">
+					  			<blockquote class="blockquote mb-0">
+									<p class="text-center"> Vine porque me lo recomendó una amiga, jamás creí poder encontrar un lugar donde desconectarme completamente del stress de mi trabajo y mi vida personal. Es mejor que ir a terapia!</p>
+									<footer class="blockquote-footer text-center">Eva, 33 años.</footer>
+					  			</blockquote>
+								</div>
+				  		</div>
+			  		</div>
+					</div>
+				<a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
+			  	<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			  	<span class="sr-only">Previous</span>
+				</a>
+				<a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
+			  	<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			 	 <span class="sr-only">Next</span>
+				</a>
+		  	</div>
+			</div>
+		</div>
 	</main>
+
+<!--FOOTER-->
+
 	<footer class="container-fluid noIndexFooter pt-lg-5 pb-lg-3">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-4 d-none d-lg-block">
-                <span class="d-lg-block text-lg-left boldFont">Dirección</span>
-				<p class="text-justify pt-2">Calle falsa 123, Springfield, Argentina.</p>
+          <span class="d-lg-block text-lg-left boldFont">Dirección</span>
+					<p class="text-justify pt-2">Calle falsa 123, Springfield, Argentina.</p>
 				</div>
-                <div class="col-lg-4">					
-		    		<span class="d-block text-center boldFont"> Nuestras redes sociales</span>
+        <div class="col-lg-4">					
+	    		<span class="d-block text-center boldFont"> Nuestras redes sociales</span>
 					<div class="d-flex justify-content-around pt-lg-2 pt-4 pt-lg-2 pb-5 pb-lg-1">
-					<a href="https://instagram.com"><img class="noIndexFooter__img pb-lg-3" src="../images/instagram-sign-blanco.png"></a>
-					<a href="https://facebook.com" ><img class="noIndexFooter__img pb-lg-3" src="../images/facebook-sign-blanco.png"></a>
-					<a href="https://twitter.com" ><img class="noIndexFooter__img pb-lg-3" src="../images/twitter-sign-blanco.png"></a>
+						<a href="https://instagram.com"><img class="noIndexFooter__img pb-lg-3" src="../images/instagram-sign-blanco.png"></a>
+						<a href="https://facebook.com" ><img class="noIndexFooter__img pb-lg-3" src="../images/facebook-sign-blanco.png"></a>
+						<a href="https://twitter.com" ><img class="noIndexFooter__img pb-lg-3" src="../images/twitter-sign-blanco.png"></a>
+					</div>
 				</div>
-			</div>
 				<div class="col-lg-4 d-none d-lg-block">
 					<span class="d-lg-block text-lg-left boldFont ">Newsletter</span>
 					<span class="d-lg-block text-lg-left pt-lg-2 ">Si desea recibir nuestras promociones, suscríbase con su correo:</span>
 					<div class="input-group mb-3 pt-lg-2">
 						<input type="email" class="form-control" placeholder="Ejemplo@email.com" aria-label="Correo electrónico" aria-describedby="button-addon2">
 						<div class="input-group-append">
-						  <button class="btn btn-outline-secondary" type="button" id="button-addon2">Enviar</button>
+			  		  <button class="btn btn-outline-secondary" type="button" id="button-addon2">Enviar</button>
 						</div>
-					  </div>	
-
+				  </div>	
 				</div>
 			</div>
 		</div>					
 	</footer>
+
 	<script src="../js/wow.js"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
