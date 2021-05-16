@@ -356,10 +356,10 @@ body {
         font-size: 1.1em; }
         body .noIndexNav .nav__item .nav-link:hover {
           color: #80a0b1; }
-    body .carouselServicios {
+    body .serviciosMain .carouselServicios {
       margin-top: 18vh !important;
-      width: 90vw; }
-      body .carouselServicios .carousel-caption {
+      width: 72vw; }
+      body .serviciosMain .carouselServicios .carousel-caption {
         color: #171934;
         background: rgba(178, 222, 229, 0.3); }
     body .articleDos h3 {

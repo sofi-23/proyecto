@@ -176,14 +176,16 @@
 
 /*SERVICIOS***/
 
-			.carouselServicios {
+		.serviciosMain{
+                .carouselServicios {
 					margin-top: 18vh !important;
-					width: 90vw;
+					width: 72vw;
 					.carousel-caption {					
 							color: $secundario;
 							background: rgba($color: $texto-secundario, $alpha: 0.3);
 					}
 			}
+		}
 			.articleDos {
 						h3 {
 								font-size: 3em;
