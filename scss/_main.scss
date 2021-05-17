@@ -51,8 +51,8 @@ body {
                 	margin-top: 1.5rem;
 					transition: 0.5s;
 					border: 0.5px solid #171934;
+					background: rgba(23, 25, 52, 0.3);
 					&:hover {
-						background: rgba(23, 25, 52, 0.3);
 						background: $secundario;
 					}
                     	a {
