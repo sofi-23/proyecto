@@ -61,10 +61,10 @@ body {
       font-size: 1.4em; }
     .fondoIndex .indexMain .indexMain__boton {
       margin-top: 1.5rem;
-      background: rgba(23, 25, 52, 0.3);
       transition: 0.5s;
       border: 0.5px solid #171934; }
       .fondoIndex .indexMain .indexMain__boton:hover {
+        background: rgba(23, 25, 52, 0.3);
         background: #171934; }
       .fondoIndex .indexMain .indexMain__boton a {
         text-decoration: none;
@@ -255,6 +255,7 @@ body {
   body {
     font-size: 20px;
     /*INDEX***/
+    /*GALERIA***/
     /*NO INDEX NAV***/
     /*NO INDEX FOOTER***/
     /*SOBRE NOSOTROS***/
@@ -282,6 +283,8 @@ body {
       body .fondoIndex .indexFooter img {
         width: 4.5rem;
         height: 4.5rem; }
+    body .imagenesGaleria {
+      margin-top: 7rem; }
     body .nav .logo {
       width: 11rem; }
     body .nav .hamburguesa {
@@ -357,7 +360,7 @@ body {
         body .noIndexNav .nav__item .nav-link:hover {
           color: #80a0b1; }
     body .serviciosMain .carouselServicios {
-      margin-top: 18vh !important;
+      margin-top: 15vh !important;
       width: 72vw; }
       body .serviciosMain .carouselServicios .carousel-caption {
         color: #171934;
@@ -382,16 +385,3 @@ body {
   /*SERVICIOS***/
   .serviciosMain .carouselServicios {
     width: 90vw; } }
-
-/*Arreglando problema del background nav***/
-/*
-@media (min-width: 990px) {
-			.indexNav {
-						.navbar-nav {
-								background: none;
-									.nav-link {
-											color: $secundario;
-									}
-						}
-			}
-}*/
